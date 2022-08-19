@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ID 선택자 연습2</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	function addHtml() {
+		$("#article").html('안녕하세요' + '<br>');
+	}
+	$(document).ready(function () {
+		alert($("#unique2").html());
+	});
+</script>
+</head>
+<body>
+	<div>
+		<p id="article"></p>
+		<p id="unique2">유니크</p>
+	</div>
+	<input type="button" value="추가하기" onClick="addHtml()" />
+</body>
+</html>

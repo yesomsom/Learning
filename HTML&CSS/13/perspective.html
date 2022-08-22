@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+        #no-pers, #pers {
+            width: 220px;
+            height: 130px;
+            border: 1px solid black;
+            margin: 30px;
+            float: left;
+        }
+        /*.rotatex img {
+            -webkit-transform: rotateX(50deg);
+            -moz-transform: rotateX(50deg);
+            -o-transform: rotateX(50deg);
+            transform: rotateX(50deg);
+            margin: 10px;
+        }*/
+        #pers {
+            -moz-perspective: 300px;
+            -webkit-perspective: 300px;
+            perspective: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h4>원본 이미지</h4>
+    <div>
+        <img src="images/sunset.jpg" width="200px" alt="">
+        <img src="images/per.JPG" width="200px" alt="">
+    </div>
+    <div id="no-pers">
+        <div class="rotatex">
+            <img src="images/sunset.jpg" width="200px" alt="">
+        </div>
+    </div>
+    <div id="pers">
+        <div class="rotatex">
+            <img src="images/sunset.jpg" width="200px" alt="">
+        </div>
+    </div>
+    <div id="no-pers">
+        <div class="rotatex">
+            <img src="images/per.JPG" width="200px" alt="">
+        </div>
+    </div>
+    <div id="pers">
+        <div class="rotatex">
+            <img src="images/per.JPG" width="200px" alt="">
+        </div>
+    </div>
+</body>
+</html>

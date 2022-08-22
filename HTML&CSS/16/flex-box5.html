@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 500px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            border: 2px solid black;
+        }
+        #container div {
+            width: 100px;
+            border: 2px solid black;
+            background: #ccc;
+        }
+        #box1 {
+            align-self: flex-start;
+            flex: 1.5;
+        }
+        #box3 {
+            align-self: flex-end;
+            flex: 1.5;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            font-weight: bold;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1"><p>1</p></div>
+        <div id="box2"><p>2</p></div>
+        <div id="box3"><p>3</p></div>
+    </div>
+</body>
+</html>

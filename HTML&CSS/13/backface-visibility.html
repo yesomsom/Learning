@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 60px;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .container {
+            border: 1px solid black;
+            perspective: 300px;
+            margin-top: 100px;
+            margin-left: 100px;
+            float: left;
+        }
+        .box {
+            background: #82cbd8;
+            -webkit-transform: rotateY(135deg);
+            -moz-transform: rotateY(135deg);
+            -o-transform: rotateY(135deg);
+            transform: rotateY(135deg);
+        }
+        #back1 {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        #back2 {
+            -webkit-backface-visibility: visible;
+            -moz-backface-visibility: visible;
+            backface-visibility: visible;
+        }
+        .box1 {
+            background: #82cbd8;
+            -webkit-transform: rotateX(135deg);
+            -moz-transform: rotateX(135deg);
+            -o-transform: rotateX(135deg);
+            transform: rotateX(135deg);
+        }
+        .box2 {
+            background: #82cbd8;
+            -webkit-transform: rotateZ(135deg);
+            -moz-transform: rotateZ(135deg);
+            -o-transform: rotateZ(135deg);
+            transform: rotateZ(135deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="back1">
+            <h1>BACK</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box" id="back2">
+            <h1>BACK</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box1" id="back3">
+            <h1>BACK</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box2" id="back4">
+            <h1>BACK</h1>
+        </div>
+    </div>
+</body>
+</html>

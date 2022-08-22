@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹 폼</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+        li {
+            list-style: none;
+        }
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: gray;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background-color: gray;
+            font-size: 45px;
+        }
+        fieldset {
+            margin: 20px;
+        }
+        .reg {
+           float: left;
+        }
+        ul {
+             line-height: 30px;
+             font-size:  14px;
+        }
+    </style>
+</head>
+<body>
+    <h1> 여름방학 특강 신청 </h1>
+    <form>
+        <fieldset>
+            <legend>수강 신청인</legend>
+            <ul>
+                <li>
+                    <label class="reg" for="id">학번</label>
+                    <input type="text" id="id">
+                </li>
+                <li>
+                    <label class="reg" for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li>
+                    <label class="reg" for="class">학과</label>
+                    <select id="class">
+                        <optgroup label="공과대학">
+                            <option value="archi">건축공학과</option>
+                            <option value="compu" selected>컴퓨터공학과</option>
+                            <option value="elec">전기전자공학과</option>
+                        </optgroup>
+                        <optgroup label="예술대학">
+                            <option value="art">미술과</option>
+                            <option value="act">연극영화학과</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>수강 과목을 선택하세요</legend>
+            <ul>
+                <li>
+                    <span class="reg">관심분야</span>
+                    <label for="interest"></label>
+                    <input type="text" id="interest" list="choices" autofocus>
+                    <datalist id="choices">
+                        <option value="grammer" label="문법"></option>
+                        <option value="voca" label="어휘"></option>
+                    </datalist>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>

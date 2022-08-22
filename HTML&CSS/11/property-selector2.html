@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>속성 선택자</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            padding: 5px 30px;
+        }
+        li a {
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+        }
+        a[target="_blank"] {
+            padding-right: 30px;
+            background:url('images/1.jpg') no-repeat center right;
+            background-size: 30px;
+        }
+        a:hover {
+            cursor: pointer;
+            color:red;
+        }
+        a:visited {
+            color: yellow;
+        }
+        a:link {
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href="http://www.w3c.org/TR/html" target="_blank">HTML</a></li>
+        <li><a href="http://www.w3c.org/TR/Selector">CSS Selector Level 3</a></li>
+        <li><a href="http://www.w3c.org/TR/css3-mediaqueries"> 미디어쿼리</a></li>
+    </ul>
+</body>
+</html>

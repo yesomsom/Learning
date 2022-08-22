@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>동영상 배경</title>
+    <style>
+        #container {
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+        h2 {
+            font-size: 2em;
+            color: black;
+        }
+        h1 {
+            font-size: 3.5em;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        #bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+            background: url('images/flame.jpg') left top no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <video src="media/Earth.mp4" autoplay loop muted poster="images/flame.jpg" id="bg"></video>
+    <div id="container">
+        <h2>환경을 생각하는 스토어</h2>
+        <h1><a href="http://goodwillstore.org/?NaPm=ct%3Dl4z5y0ug%7Cci%3D0HT%5F001HT%5FHwcZ3%5FH11x%7Ctr%3Dsa%7Chk%3Dbad16d109a132c5c038b40babb214e7de8567e1e">굿윌스토어</a></h1>
+    </div>
+</body>
+</html>

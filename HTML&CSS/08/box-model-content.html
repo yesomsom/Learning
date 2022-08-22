@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스 모델로 콘텐츠 정리하기</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        nav ul {
+            list-style-type: none; 
+            font-size: 28px;
+            padding: 10px 20px; 
+        }
+        nav ul li {
+            display: inline;
+            padding: 9px 10px;
+            float: right;
+            font-size: 15px;
+            
+        }
+
+        .pur {
+            color: blueviolet;
+            font-size: 0.7em;
+        }
+        .sub {
+            font-size: 0.5em;
+        }
+        .middle1 {
+            border: 1px solid black;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 2px -2px 6px 1px gray;
+            
+        }
+        .middle2 {
+            border: 1px solid rgb(197, 119, 207);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .middle3 {
+            border: 1px solid rgb(34, 194, 114);
+            padding: 20px;
+            margin: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .top {
+            background-color: aqua;
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #069;
+            color: #fff;
+        }
+        .main {
+            background-image: url('images/dog.png');
+            background-repeat: no-repeat;
+            background-position: 1px 1px;
+            background-size: 15px;
+            padding: 0px 20px;
+            font-weight: 900;
+        }
+        
+        .foot {
+            padding: 20px;
+            margin: 20px;
+            font-size: 0.5em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul><strong>애완견 종류</strong>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+    </nav>
+    
+    <div class="middle1">
+        <p class="main">활달한 강아지</p>
+        <span class="pur">요크셔테리어</span>
+        <p class="sub">생기있고 활발하며 가정견으로 적당하다.</p>  
+        <span class="pur">말티즈</span>
+        <p class="sub">애정이 많고 충실하며 활발한 성격을 소유하고 있다. 우리나라 
+            최고의 가정견으로 자리잡고 있다.
+        </p>   
+    </div>
+
+    <div class="middle2">
+        <p class="main">온순한 강아지</p>
+        <span class="pur">쉬즈</span>
+        <p class="sub">이름에서 풍기는 모습처럼 온순하고 우호적이다. 어린 아이
+            나 어른들이 기르기에 적합한 견종이다.</p>  
+        <span class="pur">퍼그</span>
+        <p class="sub">매우 사려가 깊고 사랑스러운 견종이며 그다지 손질이 필요하지 않고, 
+            식사량에 비해 많은 운동량이 필요하지 않다.
+        </p>   
+    </div>
+
+    <div class="middle3">
+        <p class="main">사납지만 복종적인 강아지</p>
+        <span class="pur">미니어쳐핀서</span>
+        <p class="sub">경계심이 강하고 몸집에 비해 용감하다. 주인에게 매우 복종적이다.</p>  
+        <span class="pur">푸들</span>
+        <p class="sub">사납진 않으나 상당히 복종적이고, 지능지수가 애완견 중 가장 뛰어나다.
+        </p>   
+    </div>
+    
+    <div class="foot">
+        <h1>건강한 강아지는</h1>
+        <ul>
+            <li>눈곱이 없어야 합니다.</li>
+            <li>털이 윤기가 나야합니다.</li>
+            <li>입에서 고약한 냄새가 나지 않습니다.</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

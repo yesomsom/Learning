@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class MultiplyValue {
+            constructor(a, b, c) {
+                this.a = a
+                this.b = b
+                this.c = c
+            }
+            getMultiply () {
+                return (this.a*this.b*this.c)
+            }
+        }
+
+        class CubeValue extends MultiplyValue {
+            constructor(x) {
+                super(x, x, x)
+            }
+        }
+        const cube = new CubeValue(10)
+        const multi = new MultiplyValue(20,10,2)
+        console.log(`${cube.getMultiply()}`)
+        console.log(`${multi.getMultiply()}`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

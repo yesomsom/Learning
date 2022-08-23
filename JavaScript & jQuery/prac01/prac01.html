@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 500px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form name="fo1">
+        <input type="text" name="write" readonly>
+        <input type="button" value="3" onclick="document.fo1.write.value += '3'">
+    </form>
+</body>
+</html>

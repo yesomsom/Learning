@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let input = `
+일자,달러,엔
+02,22,344,44
+3,5,7,8
+        `   
+
+        input = input.trim()
+        console.log(input)
+        input = input.split('\n')
+        console.log(input)
+        input = input.map((l) => l.split(','))
+        console.log(input)
+        console.log(JSON.stringify(input, null, 2))
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script>
+        const books = [{
+            name: '혼공자바',
+            price: 21000,
+            publisher: '한빛미디어'
+        }, {
+            name: '혼공HTML',
+            price: 19000,
+            publisher: '한빛미디어'
+        }]
+
+        const output =_.sortBy(books, (book) => book.price)
+        console.log(JSON.stringify(output, null, 2))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

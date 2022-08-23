@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "맑은 고딕", "돋움";
+    font-size: 12px;
+    color: #444444;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #444444;
+}
+
+.clear {
+    clear: both;
+}
+
+/*헤더*/
+header {
+    height: 128px;
+    min-width: 1950px;
+}
+
+header #top {
+    width: 990px;
+    margin: 0 auto;
+}
+
+header #top_logo {
+    position: absolute;
+    left: 40px;
+    top: 37px;
+  }
+
+header #logo {
+    float: left;
+    margin: 30px 0 0 30px;
+    position: absolute;
+    left: 26%;
+    top: -5px;
+    /*border: solid 1px #000000;*/
+}
+
+header #logo2 {
+    float: left;
+    margin: 30px 0 0 30px;
+    position: absolute;
+    left: 100%;
+    top: -40px
+        /*border: solid 1px #000000;*/
+}
+
+/*검색*/
+header #search {
+    float: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #96c11f;
+    margin: 40px 0 0 50px;
+    position: absolute;
+    left: 1385px;
+    top: -5px;
+      /*border: solid 1px #000000;*/
+  }
+  
+  header #search #search_form {
+    border-bottom: solid 1px #cccccc;
+    width: 200px;
+    height: 28px;
+  }
+  
+  header #search #search_form input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 0;
+    font-size: 1.3em;
+  }
+  
+  header #search #search_button {
+    float: right;
+    margin-top: -26.5px;
+    margin-right: -25px;
+    position: relative;
+  }
+  
+  header #search #search_button:hover {
+    cursor: pointer;
+  }
+  
+  /*상단 메뉴*/
+  header #top_menu {
+    float: right;
+    margin-top: 45px;
+    margin-right: 60px;
+    /*border: solid 1px #000000;*/
+  }
+
+header #top_menu a:link {
+    font-size: 11px;
+    color: #888888;
+}
+
+header #top_menu a:visited {
+    font-size: 11px;
+    color: #888888;
+}
+
+header #top_menu a:hover {
+    font-size: 11px;
+    color: #888888;
+}
+
+header #top_menu a:active {
+    font-size: 11px;
+    color: #888888;
+}
+
+header #top_menu li.green a:link {
+    color: #96c11f;
+}
+
+header #top_menu li.green a:visited {
+    color: #96c11f;
+}
+
+header #top_menu li.green a:hover {
+    color: #96c11f;
+}
+
+header #top_menu li.green a:active {
+    color: #96c11f;
+}
+
+header #top_menu li {
+    display: inline;
+    margin-left: 10px;
+}
+
+/*메인 메뉴*/
+header #main_menu {
+    height: 38px;
+    margin-top: 15px;
+    width: 100%;
+    background-color: #4e4c4d;
+}
+
+header #main_menu ul {
+    width: 990px;
+    margin: auto;
+    /*border: solid lpx #ff0000;*/
+    padding-top: 12px;
+    text-align: center;
+}
+
+header #main_menu li {
+    display: inline;
+    margin: 0 57px;
+}
+
+header #main_menu a:link {
+    color: #ffffff;
+}
+
+header #main_menu a:visited {
+    color: #ffffff;
+}
+
+header #main_menu a:hover {
+    color: #ffffff;
+}
+
+header #main_menu a:active {
+    color: #ffffff;
+}
+
+/* footer */
+footer {
+    clear: both;
+    height: 200px;
+    margin-top: 20px;
+}
+
+footer #footer_menu_box {
+    height: 40px;
+    background-color: #4e4c4d;
+    min-width: 1950px;
+}
+
+footer #footer_menu {
+    width: 990px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+footer #footer_menu ul {
+    margin-left: 65px;
+    width: 100%;
+
+}
+
+footer #footer_menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+footer #footer_menu a {
+    margin: 0 30px;
+}
+
+footer #footer_menu a:link {
+    color: #ffffff;
+}
+
+footer #footer_menu a:hover {
+    color: #ffffff;
+}
+
+footer #footer_menu a:visited {
+    color: #ffffff;
+}
+
+footer #footer_menu a:active {
+    color: #ffffff;
+}
+
+footer #footer_box {
+    width: 990px;
+    display: flex;
+    margin-left: 565px;
+}
+
+footer #footer_box #footer_logo {
+    margin: 70px 20px 0 30px;
+}
+
+footer #footer_box #address {
+    margin: 50px 0 0 10px;
+    line-height: 1.5em;
+
+}
+
+footer #footer_box #footer_banner {
+    margin: 50px 0 0 70px;
+}
+
+/* 왼쪽 콘텐츠 */
+aside#left {
+    width: 215px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    padding: 8px;
+    position: fixed;
+}
+
+aside#left #cat_title {
+    padding: 12px;
+    background-color: #96c11f;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+aside#left li {
+    color: #666666;
+    padding: 7px 0 7px 30px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+
+/*수정*/
+aside#left #customer {
+    width: 212px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+/*수정*/
+aside#left #customer img {
+    margin: 5px 0 0 5px;
+}
+
+/*우측 콘텐츠*/
+section #right {
+    width: 750px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+section#right h2#cart_title {
+    padding: 0 0 5px 0;
+    border-bottom: solid 1px #000000;
+    margin-top: 12px;
+    min-width: 1630px;
+}
+
+section#right h2#cart_title span {
+    color: #688912;
+}
+
+section#right #process {
+    margin: 50px 0 50px 10px;
+    text-align: center;
+    font-size: 1.2em;
+    min-width: 1630px;
+
+}
+
+#cart_process li {
+    list-style: none;
+    display: inline;
+    padding: 8px 20px 8px 20px;
+    margin: -5px;
+}
+
+#cart_imp {
+    border: solid 0.1px black;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+#cart_nor {
+    border: solid 1px #ccc;
+    color: #ccc;
+}
+
+section#right {
+    position: relative;
+    margin-left: 255px;
+    margin-right: 20px;
+
+}
+
+section#right table {
+    width: 100%;
+    margin: 10px 0 0 0;
+    border-collapse: collapse;
+    border-top: solid 2px #688912;
+    border-left: solid 2px #cccccc;
+    border-right: solid 2px #cccccc;
+    border-bottom: solid 2px #cccccc;
+    min-width: 1580px;
+    max-width: 1580px;
+}
+
+section#right tr.title {
+    height: 50px;
+    background-color: #e9e8e9;
+}
+
+section#right th {
+    padding: 10px;
+    border-bottom: solid 2px #cccccc;
+}
+
+.input_num {
+    width: 34px;
+    text-align: right;
+}
+
+section#right tr.items {
+    height: 80px;
+    border-bottom: solid 2px #cccccc;
+
+}
+
+section#right tr.items td {
+    padding: 5px;
+    border-bottom: solid 2px #cccccc;
+}
+
+section#right tr.items .col1 {
+    width: 50px;
+    text-align: center;
+}
+
+section#right tr.items .col2 {
+    width: 165px;
+    text-align: center;
+}
+
+section#right tr.items .col3 {
+    width: 60px;
+    text-align: center;
+}
+
+section#right tr.items .col4 {
+    width: 80px;
+    text-align: center;
+}
+
+section#right tr.items .col5 {
+    width: 80px;
+    text-align: center;
+}
+
+section#right tr.items .col6 {
+    width: 80px;
+    text-align: center;
+}
+
+section#right tr.items .col7 {
+    width: 80px;
+    text-align: center;
+}
+
+section#right tr.total_price {
+    height: 25px;
+}
+
+section#right tr.total_price td {
+    text-align: right;
+    padding: 10px;
+}
+
+section#right tr.order_status_box {
+    height: 100px;
+    background-color: #e9e8e9;
+    border-top: solid 2px #cccccc;
+}
+
+section#right .order_status_box td {
+    vertical-align: top;
+}
+
+section#right .order_status {
+    position: relative;
+}
+
+section#right .order_status p {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+section#right .order_status div {
+    position: absolute;
+    top: 20px;
+    left: 480px;
+}
+
+section#right .order_status li {
+    display: inline-block;
+    margin: 2px 0;
+}
+
+section#right .order_status .col1 {
+    width: 150px;
+    text-align: right;
+}
+
+section#right .order_status .col2 {
+    width: 80px;
+    text-align: right;
+}
+
+section#right table span {
+    font-weight: bold;
+}
+
+section#right #order_buttons {
+    margin: 20px 0 0 0;
+    text-align: center;
+    min-width: 1100px;
+    display: flex;
+}
+
+section#right #order_buttons li {
+    display: inline;
+}
+
+section#right #order_buttons li input {
+    font-weight: bold;
+    background-color: #fff;
+    color: #a8d62a;
+    width: 105px;
+    height: 38px;
+    border: 0.3px solid gray;
+    border-radius: 5%;
+    margin-left: 80px;
+    display: 1;
+}
+
+section#right #order_buttons li input:hover {
+    background-color: #a8d62a;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sum_price {
+    font-size: 15px;
+    text-align: right;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.sum_bold {
+    font-weight: bold;
+}
+
+.sum_bold2 {
+    font-size: 20px;
+    font-weight: 900;
+    float: left;
+    margin-top: 15px;
+}
+/* 우측 배너 */
+#right_top_banner{
+    position: fixed;
+    right: 10px;
+    bottom: 200px;
+  }

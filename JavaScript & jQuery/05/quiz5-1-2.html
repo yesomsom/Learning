@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const max = function (array) {
+            let output = array[0]
+            for(let i=0 ; i<array.length ; i++) {
+                if(output<array[i]) {
+                    output = array[i]
+                }
+            }
+            return output
+        }
+        console.log(max([1,2,3,4]))
+        const array1 = [29,39,9]
+        console.log(max(array1))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

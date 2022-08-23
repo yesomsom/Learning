@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>할 일 목록</h1>
+    <input id="todo">
+    <button id="add-button">추가하기</button>
+    <div id="todo-list"></div>
+    
+</body>
+<script>
+    //전체 이벤트 생성
+    document.addEventListener('DOMContentLoaded', ()=> {
+        //body 내 태그 선언
+        const input = document.querySelector('#todo')
+        const todoList = document.querySelector('#todo-list')
+        const addButton = document.querySelector('#add-button')
+    
+        let keyCount = 0
+
+        //div에 새로 입력되는 부분 이벤트
+        const addTodo = () => {
+            //아무 것도 입력 안됐을 때 또는 space바만 입력되었을 때 경고창
+            if(input.value.trim() === '') {
+                alert('할 일을 입력해주세요.')
+                return //return 넣어야 공백이 목록에 추가되지 않음
+            }
+            const item = document.createElement('div')
+            const checkbox = document.createElement('input')
+            const text = document.createElement('span')
+            const button = document.createElement('button')
+
+            const key = keyCount
+            keyCount += 1
+
+            item.setAttribute('data-key', key)
+            item.appendChild(checkbox)
+            item.appendChild(text)
+            item.appendChild(button)
+            todoList.appendChild(item)
+
+            checkbox.type = 'checkbox'
+            checkbox.addEventListener('change', (event) => {
+                item.style.textDecoration = event.target.checked ? 'line-through' : ''
+            })
+
+            text.textContent = input.value
+
+            button.textContent = '제거하기'
+            button.addEventListener('click', () => {
+                removeTodo(key)
+            })
+
+            input.value = ''
+        }
+        //추가된 항목 제거
+        const removeTodo = (key) => {
+            const item = document.querySelector(`[data-key="${key}"]`)
+            todoList.removeChild(item)
+        }
+        //버튼으로 추가하기 이벤트
+        addButton.addEventListener('click', addTodo)
+        //키패드 엔터로 추가하기 이벤트
+        input.addEventListener('keyup', (event) => {
+            const ENTER = 13
+            if(event.keyCode === ENTER) {
+                addTodo()
+            }
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=> {
+            const imgs = document.querySelectorAll('img')
+
+            imgs.forEach((img)=> {
+                img.addEventListener('contextmenu', (event)=> {
+                    event.preventDefault()
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <img src="http://placekitten.com/300/300" alt="this is a cat.">
+    <img src="../HTML_CSS/02/images/dogs.JPG" alt="this is a dog.">
+</body>
+</html>

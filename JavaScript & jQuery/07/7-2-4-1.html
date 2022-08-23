@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=> {
+            const input = document.querySelector('#id1')
+            const button = document.querySelector('#id2')
+            const p = document.querySelector('#id3')
+
+            button.addEventListener('click',()=> {
+                const inch = Number(input.value)
+
+                if (isNaN(inch)) {
+                    p.textContent = '숫자를 입력해주세요'
+                    return
+                }
+                const cm = inch *2.54
+                p.textContent = `${cm}cm`
+            })
+        })
+        document.addEventListener('DOMContentLoaded',()=> {
+            const input = document.querySelector('#id4')
+            const button = document.querySelector('#id5')
+            const p = document.querySelector('#id6')
+
+            button.addEventListener('click',()=> {
+                const inch1 = Number(input.value)
+
+                if (isNaN(inch1)) {
+                    p.textContent = '숫자를 입력해주세요'
+                    return
+                }
+                const cm1 = inch1 *0.394
+                p.textContent = `${cm1}inch`
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="id1" type="text">inch<br>
+    <button id="id2">계산</button>
+    <p id="id3"></p>
+    <input id="id4" type="text">cm<br>
+    <button id="id5">계산</button>
+    <p id="id6"></p>
+</body>
+</html>

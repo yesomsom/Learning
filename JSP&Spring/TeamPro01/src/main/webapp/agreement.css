@@ -1,0 +1,27 @@
+@charset "UTF-8";
+body{
+	margin-top: 100px;
+	line-height: 2;
+}
+.container{
+	width: 500px;
+	margin: 0 auto;
+}
+h1{
+	font-size: 30px;
+	text-align: center;
+}
+textarea{
+	overflow: scroll;
+}
+.font_red{
+	color: red;
+}
+#button_all{
+	margin-left: 160px;
+	margin-top: 20px;
+}
+.btn{
+	width: 80px;
+	height: 40px;
+}

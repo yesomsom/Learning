@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+	margin-top: 100px;
+	line-height: 2;
+}
+form{
+	width: 500px;
+	margin: 0 auto;
+}
+table{
+	width: 500px;
+}
+h1{
+	font-size: 50px;
+	text-align: center;
+}
+input{
+	border:0px;
+}
+.input_all{
+	border-bottom: 1px solid #ccc;
+	width: 220px;
+}
+.btn{
+	width: 80px;
+	height: 40px;
+	cursor: pointer;
+}
+#button_all{
+	margin-left: 140px;
+	margin-top: 20px;
+}
+.input_email{
+	width: 100px;
+}

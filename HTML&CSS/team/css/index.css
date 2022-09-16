@@ -1,0 +1,163 @@
+*{
+  text-decoration: none;
+}
+body{
+  margin: 0 auto;
+  width: 1050px;  
+}
+h1{
+  margin-bottom: 30px;
+}
+/* 프리미엄 서비스 시작 */
+.premium_container{
+  display: flex;
+}
+
+.premium{
+  width: 450px;
+  height: 500px;
+}
+
+#premium_list{
+float: left;
+width: 300px;
+height: 180px;
+}
+
+#premium_list img{
+width: 100%;
+height: 180px;
+margin: 10px;
+vertical-align: middle;
+}
+
+/* 룸 컨테이너 */
+.room_container{
+float: right;
+width: 700px;
+height: 580px;
+}
+
+#study_container{
+height: 300px;
+display: flex;
+border-bottom: 1px solid black;
+}
+
+#conference_container{
+height: 250px;
+display: flex;
+margin-top: 40px;
+}
+
+.room_container button{
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  background-color:lightskyblue;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.room_container a{
+  color:black;
+}
+
+#study_left{
+width: 200px;
+padding-left: 10px;
+}
+
+#study_link{
+  position:relative;
+  top: 103px;
+}
+
+#study_right{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 13px;
+}
+
+#conference_left{
+width: 200px;
+padding-left: 10px;
+}
+
+#conference_link{
+  position:relative;
+  top: 80px;
+}
+
+#conference_right{
+margin-left: 13px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* 프리미엄 서비스end */
+
+/* 이벤트 시작 */
+.event_container{
+  text-align: center;
+  margin-top: 150px;
+}
+#event_list{
+  display:flex;
+  justify-content: space-between;
+}
+#event{
+  width: 300px;
+  background-color: bisque;
+  height:250px;
+}
+/* 이벤트 끝 */
+
+/* 추천 매장 시작 */
+.best_container{
+  text-align: center;
+  margin-top: 150px;
+}
+#best_list{
+  display:flex;
+  justify-content: space-between;
+}
+#best{
+  width: 300px;
+  height:250px;
+  
+}
+
+#best img{
+  width: 300px;
+  height:250px;
+}
+/* 추천 매장 끝 */
+
+/* 매장 섬네일 */
+.detail_container{
+  margin-top: 200px;  
+}
+.detail_list{
+  width: 100%;
+}
+#detail{  
+  width: 25%;  
+}
+#detail:not(:last-child){
+  margin-right: 50px;
+}
+#div_part{
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px; 
+  justify-content: space-between;
+}
+#detail img{
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* 매장 섬네일 끝 */

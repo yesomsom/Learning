@@ -1,0 +1,123 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	line-height: 2;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* 전체 묶음 div (사이드바 sidebar & 메인 main) */
+.all{
+	display:flex;
+}
+
+/* 마이페이지 사이드바 mypage sidebar */
+.myReser_sideBar{
+	width: 180px;
+	background-color: #9dccc5;
+	padding: 20px;
+}
+/* 프로필 */
+.profile{
+	text-align:center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/* 예약, 보유쿠폰, 보유포인트 현황 */
+ul li{
+	display:flex;
+}
+ul li div{
+	flex:1;
+	justify-content: space-between;
+}
+.click_point_coup{
+	text-align: right;
+}
+.click_menu_all{
+	margin-top: 20px;
+}
+.click_menu_all div{
+	border-bottom: 1px solid #4c615e;
+}
+.click_menu_all div a{
+	line-height: 5;
+	padding-left: 5px;
+}
+
+/* my 리뷰 */
+/* 타이틀 title */
+h1{
+	font-size: 40px;
+}
+/* my 리뷰 내용 */
+.container{
+	padding-top: 80px;
+	padding-bottom: 100px;
+	line-height: 2;
+	width: 600px;
+	margin: 0 70px;
+}
+
+/* top icon */
+.reser_icon_all{
+	display: flex;
+	justify-content: space-between;
+	margin-top:30px;
+	margin-bottom:50px;
+}
+.reser_icon_all .reser_icon_set{
+	flex:1;
+}
+
+/* 기간 조회 */
+/* 버튼 button */
+.btn{
+    width: 50px;
+    height: 25px;
+    margin: auto 3px;
+    border:none;
+    background-color: #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 문의 내용 content 전체 */
+.content_detail{
+	margin-top: 20px;
+}
+/* 문의 내용 content head */
+.content_head{
+	display:flex;
+}
+.content_head div{
+	display:1;
+	margin:auto 0;
+}
+.content_head a{
+	position:relative;
+	bottom:4px;
+}
+.ct{
+	padding:20px;
+	margin-left: 10px;
+}
+.img_bg{
+	width:31px;
+	height:31px;
+	border-radius:50%;
+	background: #ccc;
+}
+/* 문의 내용 content body */
+.content_body{
+	display: flex;	
+}
+.content_body div{
+	display:1;
+	margin:auto 0;
+}

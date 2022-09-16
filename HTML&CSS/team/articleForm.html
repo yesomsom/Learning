@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link rel="stylesheet" type="text/css" href="./css/articleForm.css">
+
+<head>
+	<meta charset="utr-8">
+	<title>글쓰기</title>
+</head>
+
+<body>
+	<!-- 총괄 컨테이너-->
+	<section>
+
+		<h1>글쓰기</h1>
+			
+				<div class="d-container">
+					<!--좌측 메뉴-->
+					<div class="d-i">
+						<div>
+							<h4>글제목</h4>
+						</div>
+
+						<div>
+							<h4>카테고리 </h4>
+						</div>
+						<div>
+							<h4>글내용</h4>
+						</div>
+					</div>
+
+					<!--우측 컨텐츠-->
+					<div class="d-con">
+						<div>
+							<input style="width: 510px;" type="text" maxlength="500" name="title" />
+						</div>
+
+						<div id="cat">
+							<select name="categori">
+								<option value="normal"selected>일반</option>
+								<option value="groupStudy">그룹스터디<option>
+							</select>
+						</div>
+					</div>					
+				</div>
+
+				<div class="d-c">
+					<textarea name="content" rows="10" cols="70" maxlength="4000" >						
+					</textarea>
+				</div>
+
+				<!--파일 첨부-->
+				<div class="d-container">
+					<!--좌측 메뉴-->
+					<div class="d-i">
+						<div>
+							<h4>파일 첨부</h4>
+						</div>
+						<div>
+							<h4>비밀글 설정</h4>
+						</div>
+						<div>
+							<h4>비밀번호 설정</h4>
+						</div>
+					</div>
+					
+					<!--우측 컨텐츠-->
+					<div class="d-con">
+						<div>
+							<input type="file" name="FileName"/>
+						</div>
+						<div>
+							<label for=""><input type="checkbox" id="lab-put"> 비밀글 설정하기</input></label>
+						</div>
+						<div>
+							<input id="pwd" type="password" placeholder="비밀번호를 입력하세요." style="text-indent: 10px;">
+						</div>
+					</div>
+				</div>
+				<div id="btn">
+					<input type="submit" value="작성 완료" />
+					<input type="button" value="목록" />
+				</div>
+	</section>
+</body>
+</html>

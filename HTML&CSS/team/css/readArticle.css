@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'abster';
+	src: url(./font/abster-webfont.woff) format('woff');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+body {
+	margin: 0 auto;
+	width: 800px;
+}
+div{
+	margin: 0;
+}
+a{
+	margin-bottom: 20px;
+}
+#con_header{
+	display: flex;
+	justify-content: flex-start;
+}
+#con_header_1{
+	width: 70px;
+}
+#con_header2{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(245, 245, 245);
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+#con_header2_1{
+	display: flex;
+}
+
+.con_content{
+	height: 500px;
+}
+
+#input_con{
+	float: right;
+}

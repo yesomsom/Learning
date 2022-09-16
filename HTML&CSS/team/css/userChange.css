@@ -1,0 +1,20 @@
+body{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.change_user{   
+    /*밑선 줄 맞춤*/
+    margin-left: 150px;
+}
+
+#change2 button {
+    /*수정 버튼 오른쪽에 정렬*/
+    float: right;
+}
+
+#change_button{
+    /*수정완료, 회원탈퇴 버튼 간격 및 가운데 배치*/
+    text-align: center;
+    margin: 20px;
+}

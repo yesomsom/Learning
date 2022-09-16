@@ -1,0 +1,26 @@
+body{
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.save_container{
+    /*저장 컨테이너(안내문)*/
+      text-align: center;
+      margin-top: 100px;
+  }
+
+  /*각종 내역 링크 버튼*/
+  #save_after button{
+      margin-top: 80px;
+      width: 130pt;
+      height: 20pt;
+      outline: 0;
+      border: 0;
+      cursor: pointer;
+  }
+
+  /*고객센터 홈*/
+  #home{
+    background-color: black;
+    color: white;
+  }

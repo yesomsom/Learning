@@ -1,0 +1,113 @@
+body
+{
+    width: 1050px;
+    margin: 0 auto;
+}
+img{
+    width: 100px;
+}
+/*상단 컨테이너*/
+.h_container{
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    background-color: aliceblue;
+}
+
+/*상단 컨테이너 이미지*/
+.h_container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+}
+
+/*회원 등급, 쿠폰, 포인트*/
+.u_container{
+    display: flex;
+    height: 220px;
+}
+
+.u_container img {
+    width: 170px;
+    height: 170px;
+}
+
+#p_img:not(:last-child){
+    margin-right: 30px;
+}
+
+/*유저 프로필 사진*/
+#user_profile
+{
+    margin-left: 100px;
+}
+
+/*매장들*/
+#plc
+{
+    margin-left: 100px;
+}
+
+/*매장 리스트*/
+#plc_list
+{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/*매장 이미지 및 예약 현황*/
+#plc_reserve
+{
+    background-color: rgb(233, 233, 233);
+    display: flex;
+}
+
+#plc:not(:last-child)
+{
+    margin-left: 30px;
+    margin-right: 150px;
+}
+
+/*매장 이미지 크기*/
+#plc_reserve_img img
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+/*매장 이미지 텍스트*/
+#plc_reserve_text
+{
+    margin-top: 50px;
+    margin-right: 30px;
+}
+
+/*밑 부분 링크*/
+.view_more
+{
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#heart, #my_review, #my_pay, #my_mean
+{
+    /*밑 부분 각종 링크 아이콘(텍스트) 간격*/
+    margin-left: 120px;
+}
+
+a
+{
+    /*밑 부분 링크 밑줄 제거 및 색깔 검정색 통일*/
+    text-decoration : none;
+    color: black;
+}
+
+a:hover
+{
+    /*마우스 반응 효과*/
+    color: red;
+}

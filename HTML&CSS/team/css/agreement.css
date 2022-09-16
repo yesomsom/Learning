@@ -1,0 +1,40 @@
+body{
+	width: 1050px;
+	margin: 0 auto;
+}
+
+/* 전체 div 묶음 */
+.container{
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* 타이틀 title */
+h1{
+	font-size: 30px;
+	text-align: center;
+}
+
+/* 이용약관 테이블 table */
+textarea{
+	overflow: scroll;
+	margin-bottom: 30px;
+	margin-top: 5px;
+}
+.font_red{
+	color: red;
+}
+
+/* 버튼 button */
+#button_all{
+	margin-left: 160px;
+	margin-top: 20px;
+}
+.btn{
+	width: 80px;
+	height: 40px;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;
+	border-radius: 8px;
+}

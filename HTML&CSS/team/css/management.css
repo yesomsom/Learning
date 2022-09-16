@@ -1,0 +1,66 @@
+body {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.user_container {
+    display: flex;
+}
+
+/*사용자 정보*/
+.user_info {
+    width: 350px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+/*사용자 정보 이미지*/
+.user_info img {
+    width: 250px;
+    height: 250px;
+    border-radius: 70%;
+}
+
+/*side 구간 각종 마이페이지 정보*/
+#reserve {
+    text-align: left;
+    margin-left: 50px;
+}
+
+#reserve p {
+    display: flex;
+}
+
+/*side 구간 각종 마이페이지 링크*/
+#mysearch {
+    text-align: left;
+    margin-left: 50px;
+}
+
+#mysearch a {
+    text-decoration: none;
+    color: black;
+}
+
+#mysearch hr {
+    width: 70%;
+    float: left;
+}
+
+/*찜한 매장*/
+#take {
+    display: flex;
+}
+
+/*찜한 매장 사진 속성*/
+section#new {
+    height: 650px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+section#new .item {
+    float: left;
+    text-align: center;
+    margin: 20px 0 0 32px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 정보 수정 페이지</title>
+    <link rel="stylesheet" type="text/css" href="css/userchange.css">
+</head>
+
+<body>
+    <!--회원 정보 수정 메인-->
+    <!--이름, 아이디-->
+    <div class="change_user">
+        <h1>회원 정보 수정</h1>
+        <hr width="900px">
+        <p>이름<input type="text" style="margin-left:20%;"></p>
+        <p>아이디<input type="text" style="margin-left:18.3%;"></p>
+
+        <!--비밀번호, 휴대전화, 이메일(수정 버튼 존재)-->
+        <div id="change2">
+
+            <p>
+                <!--style의 경우 간격을 맞추기 위해 설정-->
+                비밀번호<input type="password" style="margin-left:16.5%;">
+                <button>수정</button>
+            </p>
+
+            <p>
+                <!--style의 경우 간격을 맞추기 위해 설정-->
+                휴대전화<input type="text"
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                    style="margin-left:16.5%;" />
+                <!--번호 이외의 텍스트 입력 불가-->
+                <button>수정</button>
+            </p>
+
+            <p>
+                <!--style의 경우 간격을 맞추기 위해 설정-->
+                이메일<input type="text" style="margin-left:18.3%;"> @ <input type="text">
+                <button>수정</button>
+            </p>
+        </div>
+
+        <p>
+            <!--style의 경우 간격을 맞추기 위해 설정-->
+            <!--동의 체크 박스-->
+            마케팅 수신동의
+            <input type="checkbox" name="" value='' style="margin-left:10%;">이메일 수신 동의
+            <input type="checkbox" name="" value='' />SMS 수신 동의
+        </p>
+
+        <!--수정완료, 회원탈퇴 버튼-->
+        <div id="change_button">
+            <button>수정완료</button>
+            <button>회원탈퇴</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

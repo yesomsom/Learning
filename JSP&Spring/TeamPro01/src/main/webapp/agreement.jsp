@@ -5,35 +5,51 @@
 <head>
 <meta charset="UTF-8">
 <link href="agreement.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("#cbx_chkAll").click(function() {
-				if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
-				else $("input[name=chk]").prop("checked", false);
-			});
-			
-			$("input[name=chk]").click(function() {
-				var total = $("input[name=chk]").length;
-				var checked = $("input[name=chk]:checked").length;
-				
-				if(total != checked) $("#cbx_chkAll").prop("checked", false);
-				else $("#cbx_chkAll").prop("checked", true); 
-			});
+<!-- 제이쿼리 cdn -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- 전체 동의 체크 -->
+<!-- 
+1. 전체 동의 클릭 시 아래 체크 항목 모두 체크됨
+2. 전체 동의 해제 시 아래 체크 항목 모두 해제됨
+3. 아래 체크 항목이 모두 체크되면 전체 동의가 자동으로 체크됨
+ -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#cbx_chkAll").click(function() {
+			if($("#cbx_chkAll").is(":checked")) $("input[name=chk]").prop("checked", true);
+			else $("input[name=chk]").prop("checked", false);
 		});
-	</script>
+		
+		$("input[name=chk]").click(function() {
+			var total = $("input[name=chk]").length;
+			var checked = $("input[name=chk]:checked").length;
+			
+			if(total != checked) $("#cbx_chkAll").prop("checked", false);
+			else $("#cbx_chkAll").prop("checked", true); 
+		});
+	});
+</script>
+
 <title>agreement</title>
 </head>
 <body>
+
+<!-- 전체 div 묶음 -->
 <div class="container">
+
+<!-- 타이틀 title -->
 	<h1>회원가입</h1>
+	
+<!-- 이용약관 테이블 table -->
 	<table>
+<!-- 모두 동의 체크 -->
 		<thead>
 			<tr>
 				<td><input type="checkbox" id="cbx_chkAll" /></td>
 				<td>이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</td>
 			</tr>	
 		</thead>
+<!-- 체크 항목 & textarea -->
 		<tbody>
 			<tr>
 				<td><input type="checkbox" name="chk"></td>
@@ -54,12 +70,12 @@
  회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.
 					</textarea>
 			</td>
+<!-- 마케팅 수신 동의 체크항목 (선택 체크) -->
 			<tr>
 				<td><input type="checkbox" name="chk"></td>
 				<td>마케팅 수신 동의 (
 					<input type="checkbox" name="agreeMar"> 이메일
-					<input type="checkbox" name="agreeMar"> SMS )
-				
+					<input type="checkbox" name="agreeMar"> SMS )				
 				<span class="font_red">(선택)</span></td>
 			</tr>
 			<tr>
@@ -69,6 +85,8 @@
 			</tr>
 		</tbody>
 	</table>
+	
+<!-- 버튼 button -->
 	<div id="button_all">
 		<input class="btn" type="button" value="동의">
 		<input class="btn" type="button" value="비동의">

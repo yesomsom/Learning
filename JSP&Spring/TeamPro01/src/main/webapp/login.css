@@ -11,11 +11,15 @@ body{
 	margin-top: 100px;
 	line-height: 2;
 }
+
+/* 로그인 전체 묶음 div */
 .container{
 	width: 500px;
 	margin: 0 auto;
 }
 
+
+/* tab (회원 / 비회원 클릭 탭) */
 ul.tabs{
 	margin: 0px;
 	padding: 0px;
@@ -28,24 +32,29 @@ ul.tabs li{
 	padding: 10px 15px;
 	cursor: pointer;
 }
-
 ul.tabs li.current{
 	background: #ededed;
 	color: #222;
 }
-
 .tab-content{
 	display: none;
 	background: #ededed;
 	padding: 15px;
 }
-
 .tab-content.current{
 	display: inherit;
 }
 
+
+/* tab1 회원 로그인 */
 form{
 	height: 300px;
+}
+.input_all{
+  width: 450px;
+  height: 30px;
+  margin: 8px 5px 8px 7px;
+  text-indent: 10px;
 }
 .remember_id{
 	display: inline;
@@ -57,23 +66,8 @@ form{
 .find_id_pwd{
   float: right;
 }
-.input_all{
-  width: 450px;
-  height: 30px;
-  margin: 8px 5px 8px 7px;
-  text-indent: 10px;
-}
-.login_api{
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  text-align: center;
-}
 #submit_all{
 	margin-top:60px;
-}
-#submit_all_2{
-	margin-top:10px;
 }
 .submit_login{
   width: 450px;
@@ -96,21 +90,40 @@ form{
   font-size: 16px;
   padding: 2px;
 }
+
+
+/* tab2 비회원 예약 조회 */
+#submit_all_2{
+	margin-top:10px;
+}
+
+
+/* API 전체 */
 .login_api{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  text-align: center;
   border-top: solid 0.8px #444;
   width: 450px;
   padding: 25px;
-	line-height: 2.5;
+  
 }
-#kakaoLogin{
+.kakaoLogin{
+	cursor:pointer;
+}
+.facebookLogin{
+	cursor:pointer;	
+}
+/* #kakaoLogin{
   width: 450px;
   height: 45px;
   background-color: rgb(228, 214, 21);
   border: solid 0.8px rgb(228, 214, 21);
   border-radius: 3px;
   font-size: 16px;
-}
-#naverLogin{
+} */
+/* #naverLogin{
   width: 450px;
   height: 45px;
   background-color: green;
@@ -119,8 +132,8 @@ form{
   font-size: 16px;
   margin-top: 15px;
   color: #fff;
-}
-#facebookLogin{
+} */
+/* #facebookLogin{
   width: 450px;
   height: 45px;
   background-color: blue;
@@ -129,4 +142,4 @@ form{
   font-size: 16px;
   margin-top: 15px;
   color: #fff;
-}
+} */

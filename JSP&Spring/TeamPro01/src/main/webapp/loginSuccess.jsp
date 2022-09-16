@@ -10,8 +10,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <a href="#0" id="kakaoLogout">로그아웃</a>
-    <a href="#0" id="btn_logout">로그아웃</a>
+
+<!-- 카카오 로그아웃 -->
+    <a href="#0" id="kakaoLogout">카카오 로그아웃</a>
 <!--     <a href="#0" id="secession">탈퇴</a> -->
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
@@ -25,7 +26,8 @@
                 return;
             }
             Kakao.Auth.logout(function(response) {
-                alert(response +' logout');
+                /* alert(response +' logout'); */
+                alert('로그아웃 완료');
                 window.location.href='/TeamPro01/login.jsp'
             });
         };
@@ -53,19 +55,33 @@
         
         */	
     </script>
-	<script type="text/javascript">
+    
+<!-- 네이버 로그인 성공시 정보 받아옴 -->
+<script type="text/javascript">
 		  var naver_id_login = new naver_id_login("9fJ2_QsV_QB304XSw40_", "http://localhost:8080/TeamPro01/loginSuccess.jsp");
 		  // 접근 토큰 값 출력
-		  alert(naver_id_login.oauthParams.access_token);
+		  /* alert(naver_id_login.oauthParams.access_token); */
 		  // 네이버 사용자 프로필 조회
 		  naver_id_login.get_naver_userprofile("naverSignInCallback()");
 		  // 네이버 사용자 프로필 조회 이후 프로필 정보를 처리할 callback function
-		  function naverSignInCallback() {
+		  /* function naverSignInCallback() {
 		    alert(naver_id_login.getProfileData('email'));
 		    alert(naver_id_login.getProfileData('nickname'));
 		    alert(naver_id_login.getProfileData('age'));
-		  }
+		  } */
 		  
 </script>
+
+<a href="#0" id="naverLogout">네이버 로그아웃</a>
+<script type="text/javascript">
+	function naverLogout() {
+/* 		naver_id_login.logout(); */
+		alert('로그아웃 완료');
+		location.replace("login.jsp");
+	}
+    const n_logout = document.querySelector('#naverLogout');
+    n_logout.addEventListener('click', naverLogout);
+</script>
+
 </body>
 </html>

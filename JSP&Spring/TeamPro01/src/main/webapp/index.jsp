@@ -27,8 +27,8 @@
   const naverLogin = new naver.LoginWithNaverId(
    {
     clientId: "9fJ2_QsV_QB304XSw40_",
-    callbackUrl: "http://localhost:8080/TeamPro01/loginSuccess.jsp",
-    loginButton: {color: "green", type: 2, height: 40}
+    callbackUrl: "http://localhost:8080/TeamPro01/index.jsp",
+    loginButton: {color: "green", type: 3, height: 40}
     }
    );
   
@@ -67,7 +67,7 @@
       const logout=document.getElementById('btn_logout');
       logout.addEventListener('click',(e)=>{
         naverLogin.logout();
-	location.replace("http://localhost:8080/TeamPro01/login.jsp");
+	location.replace("http://localhost:8080/TeamPro01/index.jsp");
       })
     }
    

@@ -31,12 +31,6 @@ h1 {
 }
 
 /* 공통 묶음 */
-#column_title {
-	width: 10px;
-}
-#second {
-	width: 340px;
-}
 .padding_left {
 	padding-left: 30px;
 }
@@ -45,13 +39,14 @@ h1 {
 	color: red;
 }
 .input_all{
+	width: 340px;
 	height: 30px;
 	line-height: 30px;
     border: 1px solid #dbdbdb;
 }
 
 /* 성별 gender */
-#select_box_gender {
+.select_box_gender {
 	width: 346px;
 	height: 35px;
 	line-height: 30px;
@@ -65,7 +60,7 @@ h1 {
 .div_margin {
 	margin: auto 16px;
 }
-#select_box_phone {
+.select_box_phone {
 	width: 85px;
 	height: 35px;
 	line-height: 30px;
@@ -76,7 +71,7 @@ h1 {
 .email_first_input{
 	width: 170px;
 }
-#select_box_email {
+.select_box_email {
 	width: 124px;
 	height: 35px;
 	line-height: 30px;
@@ -90,6 +85,7 @@ h1 {
 	width: 75px;
 	height: 35px;
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 /* 하단 버튼 button */
@@ -104,4 +100,5 @@ h1 {
 	width: 80px;
 	height: 40px;
 	border-radius: 10px;
+	cursor: pointer;
 }

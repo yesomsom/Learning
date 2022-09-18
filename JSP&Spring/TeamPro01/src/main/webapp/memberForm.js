@@ -1,4 +1,5 @@
-/* 미입력시 form 정보 전송 불가능 유효성 검사 */
+/* 유효성 검사 */ 
+/* 미입력시 form 정보 전송 불가능 */
 function Validation() {
 	var objId = document.getElementById("id");
 	var objPwd = document.getElementById("pwd");

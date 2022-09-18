@@ -11,13 +11,14 @@
 <head>
 <meta charset="UTF-8">
 <link href="memberForm1.css" rel="stylesheet" type="text/css">
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src = "memberForm.js"></script>
 <title>memberForm</title>
 </head>
 <body>
 
 <!-- 회원가입폼 member Form -->
-<form method="post" action="${contextPath}/" onsubmit="return Validation();">
+<form method="post" action="${contextPath}/" onsubmit="return Validation();">
 
 <!-- 타이틀 title -->
 	<h1>회원가입</h1>
@@ -39,14 +40,14 @@
 <!-- 비밀번호 일치 확인 pwd check -->		
 	<div class="mem_pwd_check">
 		<div>비밀번호 확인</div>
-		<div><input id="pwd" class="input_all" type="password" placeholder="6-20자:영문,숫자,특수문자조합"></div>
+		<div><input id="pwdCheck" class="input_all" type="password" placeholder="6-20자:영문,숫자,특수문자조합"></div>
 		<div class="mismatch-message hide padding_left font_small_red">비밀번호가 일치하지 않습니다.</div>
 	</div>
 
 <!-- 이름 name -->		
 	<div class="mem_name">
 		<div>이름</div>
-		<div><input id="" class="input_all" type="text"></div>
+		<div><input id="userName" class="input_all" type="text"></div>
 		<div class="padding_left"></div>
 	</div>
 	
@@ -54,7 +55,7 @@
 	<div class="mem_gender">
 		<div>성별</div>
 		<div>
-			<select class="select_box_gender" name='mem_gender_select'>
+			<select id="gender_select" class="select_box_gender" name='mem_gender_select'>
 				<option value='' selected>성별 선택</option>
 				<option value='male'>남성</option>
 				<option value='female'>여성</option>
@@ -80,12 +81,12 @@
 			<div class="div_margin">-</div>
 <!-- 휴대전화 phone number 두번째 자리 -->
 			<div class="phone_num_second">
-				<input class="input_all phone_num_second_input" type="text">
+				<input id="phoneNum_second" class="input_all phone_num_second_input" type="text">
 			</div>
 			<div class="div_margin">-</div>
 <!-- 휴대전화 phone number 세번째 자리 -->
 			<div class="phone_num_third">
-				<input class="input_all phone_num_third_input" type="text">
+				<input id="phoneNum_third" class="input_all phone_num_third_input" type="text">
 			</div>
 		</div>
 		<div class="padding_left">
@@ -96,7 +97,7 @@
 <!-- SMS 인증번호 message_confirm -->	
 	<div class="mem_message_confirm">
 		<div>SMS 인증번호</div>
-		<div><input id="" class="input_all" type="text"></div>
+		<div><input id="SMSNum" class="input_all" type="text"></div>
 		<div class="padding_left">
 			<input class="btn_" type="button" value="확인">
 		</div>
@@ -106,7 +107,7 @@
 	<div class="mem_birth">
 		<div>생년월일</div>
 		<div>
-			<input id="" class="input_all" type="date">
+			<input id="birth" class="input_all" type="date">
 		</div>
 		<div class="padding_left"></div>
 	</div>
@@ -118,7 +119,7 @@
 		<div class="email_all">
 <!-- 이메일 email 주소 앞자리 -->
 			<div class="email_first">
-				<input class="input_all email_first_input" type="text">
+				<input id="email" class="input_all email_first_input" type="text">
 			</div>
 			<div class="div_margin">@</div>
 <!-- 이메일 email 주소 도메인 -->

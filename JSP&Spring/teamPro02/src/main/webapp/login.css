@@ -1,0 +1,145 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+body{
+	margin-top: 100px;
+	line-height: 2;
+}
+
+/* 로그인 전체 묶음 div */
+.container{
+	width: 500px;
+	margin: 0 auto;
+}
+
+
+/* tab (회원 / 비회원 클릭 탭) */
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+ul.tabs li.current{
+	background: #ededed;
+	color: #222;
+}
+.tab-content{
+	display: none;
+	background: #ededed;
+	padding: 15px;
+}
+.tab-content.current{
+	display: inherit;
+}
+
+
+/* tab1 회원 로그인 */
+form{
+	height: 300px;
+}
+.input_all{
+  width: 450px;
+  height: 30px;
+  margin: 8px 5px 8px 7px;
+  text-indent: 10px;
+}
+.remember_id{
+	display: inline;
+  font-size: 13px;
+}
+.save_id{
+	float: left;
+}
+.find_id_pwd{
+  float: right;
+}
+#submit_all{
+	margin-top:60px;
+}
+.submit_login{
+  width: 450px;
+  height: 35px;
+  margin: 8px 5px 8px 8px;
+  background-color: rgb(138, 147, 155);
+  border: solid 0.8px rgb(138, 147, 155);
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 2px;
+}
+.join_memberform{
+  width: 450px;
+  height: 35px;
+  margin: 8px 5px 8px 8px;
+  text-align: center;
+  background-color: rgb(86, 145, 201);
+  border: solid 0.8px rgb(86, 145, 201);
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 2px;
+}
+
+
+/* tab2 비회원 예약 조회 */
+#submit_all_2{
+	margin-top:10px;
+}
+
+
+/* API 전체 */
+.login_api{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  text-align: center;
+  border-top: solid 0.8px #444;
+  width: 450px;
+  padding: 25px;
+  
+}
+.kakaoLogin{
+	cursor:pointer;
+}
+.facebookLogin{
+	cursor:pointer;	
+}
+/* #kakaoLogin{
+  width: 450px;
+  height: 45px;
+  background-color: rgb(228, 214, 21);
+  border: solid 0.8px rgb(228, 214, 21);
+  border-radius: 3px;
+  font-size: 16px;
+} */
+/* #naverLogin{
+  width: 450px;
+  height: 45px;
+  background-color: green;
+  border: solid 0.8px green;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #fff;
+} */
+/* #facebookLogin{
+  width: 450px;
+  height: 45px;
+  background-color: blue;
+  border: solid 0.8px blue;
+  border-radius: 3px;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #fff;
+} */

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body{
+  margin: 0 auto;
+  width: 1050px;  
+}
+
+/* div 전체 묶음 */
+.all{
+	padding: 50px;
+}
+
+/* 주문 상세 (order_detail) */
+table, tr, td{
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+table{
+	margin-top: 15px;
+	width: 950px;
+}
+td{
+	padding: 20px;
+}
+.order_detail_goods{
+	display: flex;
+	border: none;	
+}
+.order_detail_goods_des{
+	margin-left: 20px;
+}
+.font_bold{
+	font-weight: 900;
+}
+
+/* 상세 정보 */
+.info{
+	margin-top: 80px;
+}
+.detail_info{
+	table-layout: auto;
+} 
+.gbcolor_td{
+	background-color: #eee;	
+	text-align: center;
+	font-weight: bold;
+	display: flex;
+	border: none;
+}
+
+/* 결제 정보 */
+.gbcolor_td div{
+	flex:1;
+	justify-content: space-between;
+}
+.font_left{
+	text-align: left;
+	font-size: 18px;
+}
+.font_right{
+	text-align: right;
+}
+.font_color_red{
+	color: red;
+}
+/*  테이블 아래 환불 공지 문구 */
+.align_right{
+	text-align: right;
+	margin: 20px auto;
+}
+.align_right_img{
+	position:relative;
+	top:4px;
+}
+
+/* 버튼 button */
+.btn_all{
+	margin-top: 30px;
+	text-align: center;
+}
+.btn{
+	width: 140px;
+	height: 50px;
+	vertical-align: middle;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;
+	border-radius: 8px;
+	margin: 5px;
+	font-size: 16px;
+}

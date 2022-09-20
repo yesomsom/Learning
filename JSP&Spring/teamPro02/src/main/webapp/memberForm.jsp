@@ -16,8 +16,8 @@
 /* 유효성 검사 */ 
 /* 미입력시 form 정보 전송 불가능 */
 function Validation() {
-	var objId = document.getElementById("id");
-	var objPwd = document.getElementById("pwd");
+  var objId = document.getElementById("id");
+  var objPwd = document.getElementById("pwd");
   var objPwdCheck = document.getElementById("pwdCheck");
   var objUserName = document.getElementById("userName");
   var objGender_select = document.getElementById("gender_select");

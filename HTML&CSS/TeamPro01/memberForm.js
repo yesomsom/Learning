@@ -1,10 +1,5 @@
 /* 유효성 검사 */ 
 /* 미입력시 form 정보 전송 불가능 */
-
-document.addEventListener('DOMContentLoaded', () => {
-
-	
-})
 function Validation() {
 	var objId = document.getElementById("id");
 	var objPwd = document.getElementById("pwd");
@@ -69,14 +64,32 @@ function Validation() {
     objPhoneNum1.focus(); //전화번호 input에 커서가 깜빡임
 		return false;
 	}
+	var RegPhone1 = /^[0-9]{3,4}$/;
+  if(!RegPhone1.test(objPhoneNum1.value)) {
+		alert("전화번호는 숫자로만 입력해주세요");
+	  objPhoneNum1.focus(); //전화번호 input에 커서가 깜빡임
+		return false;
+	}
   if(objPhoneNum2.value=='') {
 		alert("전화번호를 입력해주세요.");
     objPhoneNum2.focus(); //전화번호 input에 커서가 깜빡임
 		return false;
 	}
+	var RegPhone2 = /^[0-9]{3,4}$/;
+  if(!RegPhone2.test(objPhoneNum2.value)) {
+		alert("전화번호는 숫자로만 입력해주세요");
+	  objPhoneNum2.focus(); //전화번호 input에 커서가 깜빡임
+		return false;
+	}
   if(objSMSNum.value=='') {
 		alert("SMS 인증번호를 입력해주세요.");
     objSMSNum.focus(); //SMS 인증번호 input에 커서가 깜빡임
+		return false;
+	}
+	var RegSMS = /^[0-9]{6}$/;
+  if(!RegSMS.test(objSMSNum.value)) {
+		alert("SMS 인증번호는 숫자로만 입력해주세요");
+	  objSMSNum.focus(); ///SMS 인증번호 input에 커서가 깜빡임
 		return false;
 	}
   if(objBirth.value=='') {

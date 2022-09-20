@@ -17,19 +17,31 @@ body {
 	width: 1050px;
 }
 
+h1 {
+	text-align: center;
+}
+.cust_top {
+	text-align: center;
+	line-height: 2;
+}
 /*** 고객센터 ***/
-#cust_search {
-	margin-top: 10px;
+.cust_search {
+	margin: 30px auto;
 	padding: 5px;
 	width: 200px;
+	display: flex;
+	text-align: center;
+	position: relative;
+	left: -80px;
 }
-
-#cust_search input {
+.cust_search div {
+	flex: 1;
+}
+.cust_search input {
 	width: 300px;
 	height: 40px;
 	line-height: 30px;
   border: 1px solid #dbdbdb;
-	text-align: center;
 	border-radius: 5px;
 	margin: 20px;
 }
@@ -37,9 +49,11 @@ body {
 	border: none;
 	background: none;
 	cursor: pointer;
+	position: relative;
+	top: 25px;
 }
-/* 추천검색어 */
 
+/* 추천검색어 */
 #cust_recommend {
 	display: flex;
 	justify-content: space-between;
@@ -66,7 +80,7 @@ body {
 /* 자주 묻는 질문 탭 tab */
 .container{
 	width: 1050px;
-	margin: 100px auto;
+	margin: 70px auto;
 	text-align: center;
 }
 ul.tabs{
@@ -213,9 +227,6 @@ ul.tabs li.current{
 	border-radius: 10px;
 }
 
-.cust_top {
-	text-align: center;
-}
 /*
 #qes_container {
 	margin-bottom: 60px;

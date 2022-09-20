@@ -1,0 +1,209 @@
+@font-face {
+	font-family: 'abster';
+	src: url(./font/abster-webfont.woff) format('woff');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	color:black;
+}
+
+body {
+	margin: 0 auto;
+	width: 1050px;
+}
+
+/*** 고객센터 ***/
+#cust_search {
+	margin-top: 10px;
+	padding: 5px;
+	width: 200px;
+}
+
+#cust_search input {
+	width: 200px;
+	margin-bottom: 60px;
+	font-size: 15px;
+}
+
+/* 추천검색어 */
+
+#cust_recommend {
+	display: flex;
+	justify-content: space-between;
+}
+
+#cust_recommend p {
+	padding-right: 30px;	
+}
+
+.cust_tit {
+	display: inline-block;
+}
+
+.cust_tit input {
+	margin: 0px 15px;
+	padding: 6px;
+	background-color: rgb(53, 50, 50);
+	color: white;
+	font-weight: bold;
+	border-radius: 8px;
+	border: 0;
+}
+
+/* 자주묻는 질문 */
+.cust_top {
+	text-align: center;
+}
+
+#qes_container {
+	margin-bottom: 60px;
+}
+
+#qes_container img {
+	border-radius: 70%;
+	overflow: hidden;
+}
+
+#qes_list {
+	text-align: center;
+}
+
+#qes_list div {
+	display: inline-block;
+	margin: 10px 50px;
+
+}
+#re_qes{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 30px 0 40px 150px;
+}
+#qes_list div p {
+	text-align: center;
+}
+
+#qes_backcontent {
+	background-color: gray;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.qes_content {
+	display: inline-block;
+	justify-content: space-between;
+	padding: 15px;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+
+.cot_tit {
+	font-size: 20px;
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.qes_arrow {
+	display: inline-block;
+	font-size: 50px;
+}
+
+/* 문의하기 */
+.q_container p{
+color:white;
+font-weight: bold;
+font-size: 1.3em;
+}
+.qes_tit_icon {
+	margin-left: 160px;
+	margin-bottom: 20px;
+	text-align: left;
+	width: fit-content;
+}
+
+.qes_box {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+#qes_mem_box1 {
+	background-color: rgb(88, 84, 84);
+	padding: 100px;
+	border-radius: 5px;
+}
+
+.qes_mem_box2 {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+#qes_mem_scont {
+	background-color: rgb(88, 84, 84);
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+#qes_nmem_scont1 {
+	background-color: rgb(88, 84, 84);
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+/*고객센터 이용안내*/
+.qes_info {
+	text-align: center;
+}
+
+#qes_tit2 {
+	text-align: center;
+	margin-top: 150px;
+}
+
+.qes_infoCon {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	width: 550px;
+	padding: 50px;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+.qes_stit {
+	font-weight: bolder;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.qes_con {
+	margin-bottom: 50px;
+}
+
+.qes_con1 {
+	padding-bottom: 15px;
+}
+
+.clicked_menu #img1{
+	background-color: red;
+}
+
+.clicked_menu #img2{
+	background-color: blue;
+}
+
+.clicked_menu #img3{
+	background-color: green;
+}
+
+.clicked_menu #img4{
+	background-color: violet;
+}

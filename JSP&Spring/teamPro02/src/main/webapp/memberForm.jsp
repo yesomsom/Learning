@@ -205,7 +205,7 @@ function Validation() {
 	const pwdCheckSuccess = document.querySelector('#pwdCheck_')
 	userPwdCheck.onkeyup = function() {
 		if(userPwd.value == userPwdCheck.value) {
-			pwdCheckSuccess.textContent = ''
+			pwdCheckSuccess.textContent = '비밀번호 일치'
 		} else {
 			pwdCheckSuccess.textContent = '비밀번호가 일치하지 않습니다'
 		}

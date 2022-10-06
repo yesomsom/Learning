@@ -1,0 +1,28 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+/* 전체 묶음 div */
+.container {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+span {
+	color: blue;
+}
+
+/* 버튼 button */
+.btn {
+	width: 80px;
+	height: 30px;
+	vertical-align: middle;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;
+	border-radius: 8px;
+	margin: 5px;
+}

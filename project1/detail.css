@@ -1,0 +1,308 @@
+* {
+	text-decoration: none;
+}
+
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+.h_container {
+	border-bottom: 1px solid black;
+	display: flex;
+	margin-bottom: 5px;
+	justify-content: space-between;
+}
+
+#b-img img {
+	width: 750px;
+}
+
+#t-img img {
+	width: 140px;
+	height: 100px;
+	margin: 10px 7px 0 0;
+}
+
+.reserve {
+	padding: 10px;
+	width: 250px;
+	border: 0.3px solid gray;
+	margin-bottom: 10px;
+}
+
+.reserve h4 {
+	margin-bottom: 0;
+}
+
+.reserve p {
+	margin-top: 0;
+}
+
+.reserve h1 {
+	margin: 0;
+}
+
+.reserve h3 {
+	margin-top: 0;
+}
+
+#btn {
+	width: 98%;
+	margin-left: 2.5px;
+	margin-bottom: 10px;
+	height: 40px;
+	color: white;
+	background-color: lightgray;
+	border: 0;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 10px;
+}
+
+#share {
+	display: flex;
+	justify-content: space-between;
+}
+
+#share select {
+	width: 200px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#share img {
+	width: 30px;
+	height: 30px;
+}
+
+#f_reserve img {
+	width: 250px;
+}
+
+.d_tablist {
+	display: flex;
+	border-bottom: 1px solid #000;
+	padding: 100px 15px 15px 15px;
+	margin-bottom: 20px;
+}
+
+#d_tab {
+	border: 0;
+	border-collapse: collapse;
+	font-size: 1.8em;
+	background-color: lightgray;
+	border-radius: 5px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+.d_goodslist {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.d_goodslist td {
+	background-color: white;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+}
+
+.d_goodslist td:not(:last-child) {
+	border-right: 1px solid #000;
+}
+
+thead tr th {
+	background-color: lightgray;
+	text-align: center;
+	height: 40px;
+}
+
+thead tr th h2 {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#point {
+	text-align: center;
+	width: 140px;
+	border-radius: 10px;
+	border: 1px solid black;
+	margin-left: 20px;
+	position: relative;
+	left: 124px;
+}
+
+#plc_td {
+	text-align: right;
+	padding: 10px 25px 10px 10px;
+	line-height: 20px;
+}
+
+#plc_td h1 {
+	margin: 0;
+	font-size: 35px !important;
+}
+
+tbody button {
+	width: 80px;
+	font-size: 21px;
+	position: relative;
+	left: 27px;
+}
+
+tbody ul {
+	margin-top: 5px;
+}
+
+.toggle_content ul {
+	line-height: 24px;
+	margin-left: 17px;
+}
+
+/*상품*/
+#goods {
+	margin-top: 100px;
+}
+
+#goods img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* �뜑蹂닿린�� */
+#goods_inf {
+	border: 1px solid black;
+	width: fit-content;
+	padding: 15px 40px;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 40px 344px;
+}
+
+/* �궗�슜諛⑸쾿 */
+#goods_h1 {
+	background-color: lightpink;
+	padding: 5px;
+}
+
+.goods_use {
+	display: flex;
+	line-height: 30px;
+}
+
+#use_noti {
+	border-bottom: 1px solid #000;
+	width: 750px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+#use_left {
+	width: 189px;
+}
+
+#use_content {
+	position: relative;
+	left: 0px;
+	top: 54px;
+	margin-bottom: 66px;
+}
+
+.goods_refund {
+	display: flex;
+	line-height: 30px;
+}
+
+#refund_content {
+	position: relative;
+	left: 0px;
+	top: 54px;
+	padding-bottom: 130px;
+	line-height: 30px;
+}
+
+#cancle_ex {
+	border-bottom: 1px solid #000;
+	width: 750px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+/* �긽�뭹 �븘�닔 �젙蹂� 怨좎떆 */
+#notice_inf {
+	width: 92.5%;
+	font-size: 30px;
+	font-weight: bold;
+	border: 1px solid black;
+	text-align: center;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+}
+
+/* �뙋留ㅼ옄 �젙蹂� */
+#notice_seller {
+	width: 92.5%;
+	font-size: 30px;
+	font-weight: bold;
+	border: 1px solid black;
+	text-align: center;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+}
+
+#review_header {
+	border-top: 1px solid #000;
+	display: flex;
+	justify-content: space-between;
+}
+
+#review_header div {
+	flex: 1;
+	text-align: right;
+	padding-top: 20px;
+}
+
+#review_header h4 {
+	color: blue;
+}
+
+#review_header h1 {
+	width: 154px;
+}
+
+#review_content {
+	clear: both;
+	text-align: center;
+	padding: 20px;
+}
+
+/* �긽�뭹臾몄쓽 */
+.goods_question {
+	border: 1px solid black;
+	margin: 100px auto;
+	padding: 20px;
+	line-height: 30px;
+}
+
+#question_header {
+	display: flex;
+	justify-content: space-between;
+}
+
+#question_header button {
+	margin-top: 20px;
+	height: 50px;
+	font-size: 20px;
+	border: 0.1px solid black;
+	border-radius: 5px;
+	background-color: #fff;
+}

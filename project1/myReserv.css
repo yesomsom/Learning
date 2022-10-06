@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+}
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* 전체 묶음 div (사이드바 sidebar & 메인 main) */
+.all{
+	display:flex;
+}
+
+/* 마이페이지 사이드바 mypage sidebar */
+.myReser_sideBar{
+	width: 180px;
+	background-color: #9dccc5;
+	padding: 20px;
+}
+/* 프로필 */
+.profile{
+	text-align:center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+/* 예약, 보유쿠폰, 보유포인트 현황 */
+ul li{
+	display:flex;
+}
+ul li div{
+	flex:1;
+	justify-content: space-between;
+}
+.click_point_coup{
+	text-align: right;
+}
+.click_menu_all{
+	margin-top: 20px;
+}
+.click_menu_all div{
+	border-bottom: 1px solid #4c615e;
+}
+.click_menu_all div a{
+	line-height: 5;
+	padding-left: 5px;
+}
+
+/* my예약/결제 내용 */
+.container{
+	padding-top: 80px;
+	padding-bottom: 100px;
+	line-height: 2;
+	width: 600px;
+	margin: 0 70px;
+}
+/*예약 타이틀 및 기간 설정*/
+#pr_stitl {
+margin: 20px 0 30px 0;
+}
+#pr_stitl span {
+  border-bottom: 2px solid gray;
+  padding: 5px;
+  margin: 20px 30px 20px 0;
+  }
+.pr_date {
+  margin: 0 0 30px 0;
+}
+/* 예약 리스트 */
+img {
+  width: 120px;
+}
+.pr_list {
+  padding: 10px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:5px;
+  align-items: center;
+  line-height: 1.8;
+}
+
+.room_info {
+  text-align: center;
+}
+.room_info ul li {
+  text-align: center;
+}
+.room_info a {
+  text-align: center;
+}
+.room_info img {
+padding-top: 7px;
+}

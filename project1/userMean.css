@@ -1,0 +1,65 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+/* 메인 컨테이너 */
+#usermean h1 {
+	text-indent: 80px;
+}
+
+/*텍스트 상자 길이 고정 */
+#tx {
+	width: 850px;
+	resize: none;
+}
+
+.mean_container {
+	margin: 0 auto;
+}
+
+form {
+	text-align: center;
+}
+/* 문의 유형*/
+#mean_option {
+	text-align: left;
+	margin-left: 85px;
+}
+
+/* 문의 내용*/
+#mean_content {
+	text-align: left;
+	width: 900px;
+	text-align: center;
+}
+
+#mean_content p {
+	text-align: left;
+	text-indent: 25px;
+}
+
+/* 문의하기 버튼*/
+#Usermeanbutton1 {
+	width: 600px;
+	height: 50px;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#Usermeanbutton1:hover {
+	background-color: rgb(190, 190, 190);
+}
+
+/* 파일첨부 */
+.plus_file {
+	display: flex;
+	justify-content: space-between;
+	width: 856px;
+}

@@ -1,0 +1,46 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+/* form */
+form{
+	width: 500px;
+	margin: 0 auto;
+}
+
+/* 타이틀 title */
+h1{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight: 900;
+}
+
+/* 이용약관 테이블 table */
+textarea{
+	overflow: scroll;
+	margin-bottom: 30px;
+	margin-top: 5px;
+	padding: 10px;
+	resize:none;
+}
+.font_red{
+	color: red;
+}
+
+/* 버튼 button */
+#button_all{
+	margin-left: 160px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.btn{
+	width: 80px;
+	height: 40px;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;
+	border-radius: 8px;
+	margin: 10px;
+}

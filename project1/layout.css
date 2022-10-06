@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'abster';
+	src: url(./font/abster-webfont.woff) format('woff');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration:none;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.gnbnav ul {
+	list-style: none;
+}
+
+#foot-nav ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+/*main*/
+
+/*메인gnb로고*/
+#main_logo {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#main_logo a {
+	color: black;
+}
+
+#main_logo h1 {
+	font-family: abster;
+	float: center;
+	font-weight: bold;
+	font-size: 3.5em;
+	color: black;
+}
+
+#main_logo img {
+	float: right;
+	width: 25px;
+	margin-right: 10px;
+}
+/* #main_logo img:nth-child(2) {
+	
+	margin-right: 115px;
+} */
+
+/*gnb*/
+.gnbnav {
+	/* background-color: gray; */
+	height: 40px;
+	margin-bottom: 30px;
+}
+
+.gnbnav ul {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gnbnav li {
+	margin: auto;
+}
+
+.gnbnav li a {
+	color: black;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.gnbicon{
+	float:right;
+	margin-right:115px;
+	list-style:none;
+	display:flex;	
+}
+
+.gnbicon li:nth-child(4){
+	margin-top:4px;
+}
+	
+.gnbicon a{
+	width:fit-content;
+	margin-top:5px;
+}
+
+/*sidebar*/
+.side-container {
+	position: fixed;
+	left: 1900px;
+	width: 180px;
+	height: 320px;
+	top: 195px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+	text-align: center;
+	border: 0
+}
+
+/*footer*/
+.foot-container {
+	font-size: 0.8em;
+	position: relative;
+	/* background-color: lightgray; */
+	padding: 10px 0 20px 482px;		
+}
+
+.foot-container p{
+	margin:0 !important;
+	line-height:18px;
+}
+
+/*footernav*/
+#foot-nav {
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	margin-right: 423px;
+}
+
+#foot-nav li {
+	float: left;
+	padding: 0 15px;
+}
+
+#foot-nav li a {
+	color: black;
+}
+
+#foot-nav li::after {
+	content: "|";
+	float: right;
+	color: black;
+	margin-right: -17px;
+}
+
+#foot-nav li:last-child::after {
+	content: "";
+}
+
+/*footercontent*/
+#foot-content {
+	background-color: black;
+}
+
+#foot-content p {
+	float: left;
+	padding: 0 5px;
+}
+
+#foot-content p::after {
+	content: "|";
+	float: right;
+	color: black;
+	margin-right: -7px;
+}
+
+#foot-content p:first-child {
+	padding-left: 0;
+}
+
+#foot-content p:last-child::after {
+	content: "";
+}

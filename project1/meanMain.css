@@ -1,0 +1,103 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+img {
+	width: 100px;
+}
+/*�긽�떒 而⑦뀒�씠�꼫*/
+.h_container {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	background-color: aliceblue;
+}
+
+/*�긽�떒 而⑦뀒�씠�꼫 �씠誘몄�*/
+.h_container img {
+	width: 200px;
+	height: 200px;
+	border-radius: 70%;
+}
+
+/*�쉶�썝 �벑湲�, 荑좏룿, �룷�씤�듃*/
+.u_container {
+	display: flex;
+	height: 220px;
+}
+
+.u_container img {
+	width: 170px;
+	height: 170px;
+}
+
+#p_img:not(:last-child) {
+	margin-right: 30px;
+}
+
+/*�쑀�� �봽濡쒗븘 �궗吏�*/
+#user_profile {
+	margin-left: 100px;
+}
+
+/*留ㅼ옣�뱾*/
+#plc {
+	margin-left: 100px;
+}
+
+/*留ㅼ옣 由ъ뒪�듃*/
+#plc_list {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+/*留ㅼ옣 �씠誘몄� 諛� �삁�빟 �쁽�솴*/
+#plc_reserve {
+	background-color: rgb(233, 233, 233);
+	display: flex;
+}
+
+#plc:not(:last-child) {
+	margin-left: 30px;
+	margin-right: 150px;
+}
+
+/*留ㅼ옣 �씠誘몄� �겕湲�*/
+#plc_reserve_img img {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+}
+
+/*留ㅼ옣 �씠誘몄� �뀓�뒪�듃*/
+#plc_reserve_text {
+	margin-top: 50px;
+	margin-right: 30px;
+}
+
+/*諛� 遺�遺� 留곹겕*/
+.view_more {
+	text-align: center;
+	display: flex;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+#heart, #my_review, #my_pay, #my_mean {
+	/*諛� 遺�遺� 媛곸쥌 留곹겕 �븘�씠肄�(�뀓�뒪�듃) 媛꾧꺽*/
+	margin-left: 120px;
+}
+
+a {
+	/*諛� 遺�遺� 留곹겕 諛묒쨪 �젣嫄� 諛� �깋源� 寃��젙�깋 �넻�씪*/
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	/*留덉슦�뒪 諛섏쓳 �슚怨�*/
+	color: red;
+}

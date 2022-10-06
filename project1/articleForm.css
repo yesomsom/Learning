@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'abster';
+	src: url(./font/abster-webfont.woff) format('woff');
+}
+
+* {
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+section{
+	width: 650px;
+}
+
+
+/*** 湲��벐湲� �긽�꽭 ***/
+h1{
+text-align: left;
+margin-bottom: 30px;
+padding-bottom: 10px;
+border-bottom: 1px solid #000;
+}
+#btn {
+	text-align: center;
+}
+#btn input{
+	padding: 10px;
+	width: 150px;
+	border: 0;
+	border-radius: 5px;
+}
+.d-container{
+display:flex;
+}
+.d-i{
+	width: 130px;
+}
+.d-i div{
+margin-bottom: 10px;
+}
+.d-con{
+width: 505px;
+}
+.d-con div{
+	margin-bottom: 10px;
+}
+.d-c{
+text-align: right;
+margin-left: 130px;
+margin-bottom: 30px;
+}
+
+/* �뙆�씪泥⑤� */
+#pwd{
+	height: 30px;
+	margin-bottom: 20px;
+}

@@ -1,0 +1,67 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+.user_container {
+	display: flex;
+}
+
+/*�궗�슜�옄 �젙蹂�*/
+.user_info {
+	width: 350px;
+	background-color: aliceblue;
+	text-align: center;
+}
+
+/*�궗�슜�옄 �젙蹂� �씠誘몄�*/
+.user_info img {
+	width: 250px;
+	height: 250px;
+	border-radius: 70%;
+}
+
+/*side 援ш컙 媛곸쥌 留덉씠�럹�씠吏� �젙蹂�*/
+#reserve {
+	text-align: left;
+	margin-left: 50px;
+}
+
+#reserve p {
+	display: flex;
+}
+
+/*side 援ш컙 媛곸쥌 留덉씠�럹�씠吏� 留곹겕*/
+#mysearch {
+	text-align: left;
+	margin-left: 50px;
+}
+
+#mysearch a {
+	text-decoration: none;
+	color: black;
+}
+
+#mysearch hr {
+	width: 70%;
+	float: left;
+}
+
+/*李쒗븳 留ㅼ옣*/
+#take {
+	display: flex;
+}
+
+/*李쒗븳 留ㅼ옣 �궗吏� �냽�꽦*/
+section#new {
+	height: 650px;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+section#new .item {
+	float: left;
+	text-align: center;
+	margin: 20px 0 0 32px;
+}

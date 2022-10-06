@@ -1,0 +1,137 @@
+body {
+	margin: 0 auto;
+	width:100%;
+	min-width:1800px;
+}
+
+/*색상 강조*/
+#table_p {
+	color: red;
+	font-size: 13px;
+}
+
+/* 예약자 정보, 결제 정보 테이블(td_main1 ~ td_contents3)*/
+#td_main1 {
+	width: 100px;
+	background-color: rgb(235, 235, 235);
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+#td_main2 {
+	width: 100px;
+	background-color: rgb(235, 235, 235);
+	border-left: none;
+}
+
+#td_main3 {
+	width: 100px;
+	background-color: rgb(235, 235, 235);
+	border-left: none;
+	border-bottom: none;
+}
+
+#td_contents1 {
+	width: 950px;
+	text-align: left;
+	border-top: none;
+	border-right: none;
+}
+
+#td_contents2 {
+	width: 950px;
+	text-align: left;
+	border-right: none;
+}
+
+#td_contents3 {
+	width: 950px;
+	text-align: left;
+	border-right: none;
+	border-bottom: none;
+}
+
+/*예약 룸 정보*/
+#pay_information_2 {
+	background-color: rgb(190, 190, 190);
+	text-align: center;
+	font-weight: 900;
+	font-size: 22px;
+	padding: 20px 0;
+}
+
+/*예약자 인적사항 및 요청사항*/
+#pay_information_3 {
+	text-align: left;
+	padding: 30px 0;
+	border: 1px solid;
+}
+
+#pay_information_3_01, #pay_information_3_02 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#pay_information_3_box {
+	background-color: rgb(190, 190, 190);
+	padding: 20px 0;
+	font-weight: 500;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: none;
+}
+
+/*예약 상품*/
+#pay_information_4 {
+	text-align: left;
+	border: 1px solid;
+}
+
+#pay_information_4_01 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/*현금 영수증*/
+#pay_information_6_01 {
+	border: 1px solid;
+	font-size: 30px;
+	padding: 20px 0;
+}
+
+/*예약, 결제하기 버튼*/
+#pay_button {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+#pay_button b {
+	font-size: 26px;
+}
+
+#pay_button button {
+	margin: 0 50px;
+	padding: 10px 70px;
+	border-radius: 5px;
+}
+
+/*예약하기 버튼*/
+#reservebutton {
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	font-size: 17px;
+}
+
+/*결제하기 버튼*/
+#paymentbutton {
+	background-color: rgb(0, 183, 255);
+	color: white;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 800;
+}

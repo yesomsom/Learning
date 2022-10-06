@@ -1,0 +1,89 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/taglib.jsp"%>
+<link rel="stylesheet" href="${path}/css}/css/cancleDetail.css">
+<!-- div 전체 묶음 -->
+<div class="all">
+
+	<h1>취소/환불</h1>
+	<!-- 주문 상세 -->
+	<div class="order_detail">
+		<h2>주문 상세</h2>
+		<div>예약 주문일: 2022.09.05 | 예약 번호: XXXXXXXXXXXXXXX</div>
+		<!-- 주문 상세 테이블 -->
+		<table>
+			<tr>
+				<td>상품</td>
+				<td width="100px">금액</td>
+				<td>진행 상태</td>
+			</tr>
+			<tr>
+				<td class="order_detail_goods">
+					<div>
+						<img alt="" src="${path}/img/study1.jpg" width="150px">
+					</div>
+					<div class="order_detail_goods_des">
+						그린 아트<br> 컨퍼런스 룸 1005호, 중형 회의실<br> 성인 10명<br> 2022년
+						9월 6일(월) 14:00 ~ 2022년 9월 6일(월) 16:00
+					</div>
+				</td>
+				<td><span class="font_bold">120,000원</span></td>
+				<td><span class="font_bold font_color_red">취소 완료</span><br>
+					9/5(월) 이내 카드사 환불 완료 예정</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- 상세 정보 -->
+	<div class="info detail_info">
+		<h2>상세 정보</h2>
+		<!-- 상세 정보 테이블 -->
+		<table>
+			<tr>
+				<td class="gbcolor_td ">취소 접수 일자</td>
+				<td width="720px">2022/09/05</td>
+			</tr>
+			<tr>
+				<td class="gbcolor_td">취소 접수 번호</td>
+				<td>XXXXXXXXXXX</td>
+			</tr>
+			<tr>
+				<td class="gbcolor_td">취소 완료일</td>
+				<td>2022/09/05</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- 결제 정보 -->
+	<div class="info pay_detail">
+		<h2>결제 정보</h2>
+		<!-- 결제 정보 테이블 -->
+		<table>
+			<tr>
+				<td rowspan="2"><h3>상품 금액</h3></td>
+				<td class="gbcolor_td">
+					<div class="font_left">환불수단</div>
+					<div class="font_right">xx 카드/일시불 120,000원</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="gbcolor_td">
+					<div class="font_left">환불완료</div>
+					<div class="font_right font_color_red">120,000원</div>
+				</td>
+			</tr>
+		</table>
+		<!-- 테이블 아래 환불 공지 문구 -->
+		<div class="align_right font_color_red">
+			<img class="align_right_img" alt="importance"
+				src="${path}/img/icons8-high-importance-19 (1).png"> 카드사로 결제
+			취소 요청에 전달 된 후 환불까지 평일 기준 3~5일이 소요됩니다.
+		</div>
+	</div>
+
+	<!-- 버튼 button -->
+	<div class="btn_all">
+		<a href="${path}/css}/page/myReservation.do"><input class="btn"
+			type="button" value="목록"></a>
+	</div>
+</div>

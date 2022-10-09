@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cartMapper">
+   <resultMap type="CartVO" id="cartList">
+      <result property="cartId" column="cart_id" />
+      <result property="goodsId" column="goods_id" />
+      <result property="goodsPrice" column="goods_price" />
+      <result property="id" column="id" />
+      <result property="goodsQty" column="goods_qty" />
+      <result property="deliveryPrice" column="delivery_price" />
+      <result property="sellerName" column="seller_name" />
+      <result property="goodsImg" column="goods_img" />
+      <result property="goodsName" column="goods_name" />      
+   </resultMap>
+
+   <select id="selectAllCartList" resultMap="cartList" parameterType="CartVO">
+       select * from cart       
+   </select>   
+     
+   <update id="modifyCount" parameterType="CartVO">
+         UPDATE cart SET goods_qty = #{goodsQty} WHERE cart_id = #{cartId};
+   </update> 
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="InfoMapper">
+   <resultMap type="InfoDto" id="InfoDto">
+      <result property="rank" column="rank" />
+      <result property="img" column="img" />
+      <result property="movieTitle" column="movieTitle" />
+      <result property="movieRate" column="movieRate" />
+      <result property="movieOpenDate" column="movieOpenDate" />
+      <result property="seq" column="seq" />
+   </resultMap>
+
+   <insert id="insertInfo" parameterType="InfoDto">
+
+      <![CDATA[
+       insert into crawling(seq,rank,img,movieTitle,movieRate,movieOpenDate)
+       values( 0, #{rank},#{img},#{movieTitle},#{movieRate},#{movieOpenDate})
+      ]]>
+   </insert>
+   <select id="selectTheaterListKo" resultMap="InfoDto" parameterType="InfoDto">
+       SELECT * from crawling GROUP BY movieTitle ORDER BY movieTitle ;        
+   </select>   
+</mapper>

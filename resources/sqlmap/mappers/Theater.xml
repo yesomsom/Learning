@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="Theater">
+   <resultMap type="TheaterVO" id="theaterList">
+      <result property="id" column="id" />
+      <result property="poinm" column="poi_nm" />
+      <result property="branchnm" column="branch_nm" />
+      <result property="mcatecd" column="mcate_cd" />
+      <result property="pnu" column="pnu" />
+      <result property="sidonm" column="sido_nm" />
+      <result property="sggnm" column="sgg_nm" />
+      <result property="bemdnm" column="bemd_nm" />
+      <result property="beonji" column="beonji" />
+      <result property="badmcd" column="badm_cd" />
+      <result property="hadmcd" column="hadm_cd" />
+      <result property="rdcd" column="rd_cd" />
+      <result property="rdnm" column="rd_nm" />
+      <result property="bldnum" column="bld_num" />
+      <result property="x" column="x" />
+      <result property="y" column="y" />
+      <result property="gridcd" column="grid_cd" />
+      <result property="groupdata" column="groupdata" />
+   </resultMap>
+
+
+   <select id="selectAllTheaterList" resultMap="theaterList" parameterType="TheaterVO">
+       select * from theater       
+   </select>
+   
+   <select id="selectCGVTheaterList" resultMap="theaterList" parameterType="TheaterVO">
+       select * from theater WHERE poi_nm = 'CGV' ORDER BY branch_nm;        
+   </select>
+      <select id="selectLotteTheaterList" resultMap="theaterList" parameterType="TheaterVO">
+       select * from theater WHERE poi_nm = '롯데시네마' ORDER BY branch_nm;       
+   </select>
+   <select id="selectMegaTheaterList" resultMap="theaterList" parameterType="TheaterVO">
+       select * from theater WHERE poi_nm = '메가박스' ORDER BY branch_nm;       
+   </select>
+   
+
+   <select id="selectCGVList" resultMap="theaterList"
+      parameterType="TheaterVO">
+      select * from theater where 1=1
+      <if test="mcatecd != null">
+         and mcate_cd = #{mcatecd}
+      </if>
+      <if test="sidonm != null">
+         and sido_nm = #{sidonm}
+      </if>
+      <if test="sggnm != null">
+         and sgg_nm = #{sggnm}
+      </if>
+      <if test="branchnm != null">
+         and branch_nm = #{branchnm}
+      </if>      
+      <if test="groupdata == 1">
+         group by mcate_cd
+      </if>
+      <if test="groupdata == 2">
+         group by sido_nm
+      </if>
+      <if test="groupdata == 3">
+         group by sgg_nm
+      </if>
+      <if test="groupdata == 4">
+         group by branch_nm
+      </if>
+   
+   </select>   
+   
+</mapper>

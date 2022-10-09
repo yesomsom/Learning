@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AskMapper">
+	<resultMap id="ask" type="AskDTO">
+		<result property="ask_id" column="ask_id" />
+		<result property="ask_num" column="ask_num" />
+		<!-- <result property="ask_parent" column="ask_parent" /> -->
+		<result property="ask_related" column="ask_related" />
+		<!-- <result property="id" column="id" /> -->
+		<result property="ask_name" column="ask_name" />
+		<result property="ask_hp" column="ask_hp" />
+		<result property="ask_cat" column="ask_cat" />
+		<result property="ask_catDetail" column="ask_catDetail" />
+		<result property="ask_type" column="ask_type" />
+		<result property="ask_typeDetail" column="ask_typeDetail" />
+		<result property="ask_emaie" column="ask_email" />
+		<result property="ask_sms" column="ask_sms" />
+		<result property="ask_subject" column="ask_subject" />
+		<result property="ask_content" column="ask_content" />
+		<result property="ask_status" column="ask_status" />
+		<result property="ask_fileName" column="ask_fileName" />
+		<result property="ask_date" column="ask_date" />
+	</resultMap>
+	
+	<!-- 1:1문의 리스트 조회-->
+<!-- 	<select id="selectAskList" resultMap="ask" parameterType="AstDto">
+		select * from ask where order by ask_date desc
+		ask_id = #{ask_id}
+	</select> -->
+
+	<!-- 1:1문의 등록 -->
+	<insert id="insertAsk" parameterType="AskDTO">
+	<![CDATA[
+		insert into ask(ask_id, ask_num, ask_name, ask_hp, ask_cat, ask_catDetail, ask_type, ask_typeDetail, ask_email, ask_subject, ask_content, ask_fileName)
+		values (#{ask_id}, #{ask_num}, #{ask_name}, #{ask_hp}, #{ask_cat}, #{ask_catDetail}, #{ask_type}, #{ask_typeDetail}, #{ask_email}, #{ask_subject}, #{ask_content}, #{ask_fileName})
+		]]>
+	</insert>
+	
+</mapper>

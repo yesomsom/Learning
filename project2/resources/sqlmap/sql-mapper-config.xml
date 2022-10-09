@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+		<typeAlias alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+		<typeAlias alias="BoardVO" type="mango.board.service.BoardVO"/>
+		<typeAlias alias="MemberVO" type="mango.member.service.MemberVO"/>
+		<typeAlias alias="PayDto" type="mango.mango.model.PayDto"/>
+		<typeAlias alias="ReserveDto" type="mango.mango.model.ReserveDto"/>
+		<typeAlias alias="MemberDto" type="mango.mango.model.MemberDto"/>
+		<typeAlias alias="TheaterVO" type="mango.mango.model.TheaterVO"/>
+		<typeAlias alias="InfoDto" type="mango.mango.model.InfoDto"/>			
+		<typeAlias alias="GoodsVO" type="mango.mango.model.GoodsVO"/>
+		<typeAlias alias="CartVO" type="mango.mango.model.CartVO"/>
+		<typeAlias alias="PageMakerDTO" type="mango.common.service.PageMakerDTO"/>
+		<typeAlias alias="AskDTO" type="mango.mango.model.AskDTO"/>
+		<typeAlias alias="NoticeDTO" type="mango.mango.model.NoticeDTO"/>			
+		<typeAlias alias="QaVO" type="mango.mango.model.QaVO"/>
+		<typeAlias alias="OrdersVO" type="mango.mango.model.OrdersVO"/>
+    </typeAliases>
+</configuration>

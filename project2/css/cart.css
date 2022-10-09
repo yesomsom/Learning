@@ -1,0 +1,119 @@
+/* cart common */
+.cart_wrapper {
+    padding: 40px;
+    position: absolute;
+    top: 120px;
+    width: 1350px;
+    left: 230px;
+}
+.font_bold_big {
+   font-weight: 900;
+   font-size: 18px;
+}
+/* cart content */
+.cart_title {
+   font-size: 25px;
+   font-weight: 900;
+   margin-bottom: 35px;
+}
+.check_all_title {
+   margin-left: 10px;
+   position: relative;
+   top: 2px;
+}
+.order_card {
+   border: 1px solid #ccc;
+   margin: 30px 0;
+   padding: 20px;
+   border-radius: 10px;
+   background: white;
+}
+.seller_name {
+   position: relative;
+   top: 2px;
+   margin-left: 10px;
+}
+.cart_product_middle {
+   display: flex;
+   padding: 30px;
+   border-bottom: 1px solid #ccc;
+}
+.cart_product_middle div{
+   flex: 1;
+   margin: 25px;
+}
+.cart_product_img {
+/*    border: 1px solid #ccc; */
+   height: 140px;
+   width: 140px;
+   margin-right: 100px;
+
+}
+.cart_product_name {
+   padding: 20px;
+}
+.cart_product_qty_input {
+   text-align: right;
+   width: 35px;
+   border: none;
+   background: none;
+}
+.quantity_modify_btn {
+   border: 1px solid #ccc;
+}
+.cart_product_bottom {
+   display: flex;
+   text-align: center;
+   padding-top: 15px;
+   margin: 10px;
+}
+.cart_product_bottom div{
+   flex: 1;
+}
+.cart_product_top {
+   border-bottom: 3px dashed #fce8ac;
+   padding-bottom: 15px;
+}
+.order_price_all {
+   border-left: 1px solid #ccc;
+}
+.order_price_all_title {
+   margin-right: 10px;
+}
+/*  */
+.total_price_wrapper {
+   text-align: right;
+   border: 1px solid #fce8ac;
+   padding: 20px;
+   background: #fce8ac;
+   position: fixed;
+   bottom: 0px;
+   width: 100%;
+   display: flex-right;
+   font-size: 18px;
+}
+.total_price_title {
+   margin-right: 10px;
+   position: relative;
+   top: 5px;
+}
+.total_price {
+   margin-right: 40px;
+   font-size: 28px;
+   position: relative;
+   top: 7px;
+}
+.btn {
+   width: 200px;
+   height: 50px;
+   background: #fffff7;
+   border-radius: 7px;
+   margin-right: 18%;
+   padding: 10px;
+   cursor: pointer;
+}
+.btn:hover {
+   cursor: pointer;
+   color: white;
+   background-color: #069116;
+}

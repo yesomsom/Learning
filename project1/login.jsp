@@ -106,7 +106,7 @@ $(document).ready(function(){
             typeof(Storage) !== 'undefined' && sessionStorage.setItem('AccessKEY', JSON.stringify(token)); 
         };
 
-        window.Kakao.init('1e193fb98402ca8ad1190504d5faff19');
+        window.Kakao.init('');
         
         function kakaoLogin() {
             window.Kakao.Auth.login({
@@ -144,7 +144,7 @@ $(document).ready(function(){
  			<div id="naver_id_login"></div>
 
 			<script type="text/javascript">
-			  	var naver_id_login = new naver_id_login("9fJ2_QsV_QB304XSw40_", "http://localhost:8080/TeamPro01/loginSuccess.jsp");
+			  	var naver_id_login = new naver_id_login("", "http://localhost:8080/TeamPro01/loginSuccess.jsp");
 			  	var state = naver_id_login.getUniqState();
 			  	naver_id_login.setButton("green", 3, 90);
 			  	naver_id_login.setDomain("http://localhost:8080/TeamPro01/login.jsp");
@@ -163,7 +163,7 @@ $(document).ready(function(){
 			
 			  window.fbAsyncInit = function() {
 			    FB.init({
-			      appId      : '635833504838047',
+			      appId      : '',
 			      cookie     : true,
 			      xfbml      : true,
 			      version    : 'v3.0'

@@ -1,8 +1,8 @@
 package com.example.test3
 
 fun main() {
-    numCon(3)
-    numCon(4)
+    numCon(3) //n is an Odd number
+    numCon(4) //n is an Even number
 }
 
 fun numCon(n: Int) {

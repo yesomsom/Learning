@@ -5,5 +5,5 @@ fun main() {
     str1 = null
 
     val len = if(str1 != null) str1.length else -1
-    println("str1: $str1 length: ${len}")
+    println("str1: $str1 length: ${len}") //str1: null length: -1
 }

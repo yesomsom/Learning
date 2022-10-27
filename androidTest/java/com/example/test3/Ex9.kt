@@ -7,9 +7,9 @@ fun main() {
 
 fun checkArg(x: Any) {
     if(x is String) {
-        println("x is String: $x")
+        println("x is String: $x") //x is String: Hello
     }
     if(x is Int) {
-        println("x is Int: $x")
+        println("x is Int: $x") //x is Int: 5
     }
 }

@@ -3,7 +3,7 @@ fun main() {
     var str2 = "World"
     var str3 = "Hello"
 
-    println("str1 === str2: ${str1 === str2}")
-    println("str1 === str3: ${str1 === str3}")
-    println("str1 == str3: ${str1 == str3}")
+    println("str1 === str2: ${str1 === str2}") //str1 === str2: false
+    println("str1 === str3: ${str1 === str3}") //str1 === str2: false
+    println("str1 == str3: ${str1 == str3}") //str1 == str3: true
 }

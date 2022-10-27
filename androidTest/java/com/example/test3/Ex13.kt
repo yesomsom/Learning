@@ -1,0 +1,10 @@
+package com.example.test3
+
+fun main() {
+    println(sum(10,5))
+    println(sum(-2,5))
+}
+fun sum(a: Int, b: Int): Int{
+    var sum = a+b
+    return sum
+}

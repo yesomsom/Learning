@@ -8,3 +8,9 @@ public class KCustomerAccess {
         KCustomer.Companion.login(); // 위와 동일한 결과로 애노테이션을 사용하지 않을 때 접근 방법
     }
 }
+
+/*
+INTERMEDIATE
+Login...
+Login...
+ */

@@ -14,11 +14,11 @@
         font-size: 20px;
         font-weight: 900;
     }
-    .layout > input {
+    .layout input {
         box-sizing: border-box;
         width: 100%;
     }
-    .layout > textarea {
+    .layout textarea {
         box-sizing: border-box;
         width: 100%;
     }
@@ -35,9 +35,11 @@
 <body>
     <div class="layout">
         <div class="title">게시글 작성</div>
-        <input class="mt30" type="text">
-        <textarea class="mt30"></textarea>
-        <button class="mt10 btn">작성</button>
+        <form action="/board/writePro" method="post">
+            <input name="title" class="mt30" type="text">
+            <textarea name="content" class="mt30"></textarea>
+            <button type="submit" class="mt10 btn">작성</button>
+        </form>
     </div>
 </body>
 </html>

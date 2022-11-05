@@ -19,15 +19,19 @@ USE `board`;
 
 -- 테이블 board.board 구조 내보내기
 CREATE TABLE IF NOT EXISTS `board` (
-  `idboard` int(11) NOT NULL AUTO_INCREMENT COMMENT '게시글 번호',
+  `boardid` int(11) NOT NULL AUTO_INCREMENT COMMENT '게시글 번호',
   `title` varchar(45) NOT NULL,
-  `content` text NOT NULL,
-  PRIMARY KEY (`idboard`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `content` mediumtext NOT NULL,
+  PRIMARY KEY (`boardid`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
 
--- 테이블 데이터 board.board:~0 rows (대략적) 내보내기
+-- 테이블 데이터 board.board:~3 rows (대략적) 내보내기
 DELETE FROM `board`;
 /*!40000 ALTER TABLE `board` DISABLE KEYS */;
+INSERT INTO `board` (`boardid`, `title`, `content`) VALUES
+	(1, 'dd', 'dd'),
+	(2, '제목', '내용\r\n'),
+	(3, 'ㅇㅇ', 'ㅇㅇ');
 /*!40000 ALTER TABLE `board` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

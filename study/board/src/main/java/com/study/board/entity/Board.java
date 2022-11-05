@@ -12,7 +12,7 @@ import javax.persistence.Id;
 public class Board {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer boardId;
+    private Integer boardid;
     private String title;
     private String content;
 }

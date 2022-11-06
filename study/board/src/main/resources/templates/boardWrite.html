@@ -35,9 +35,10 @@
 <body>
     <div class="layout">
         <div class="title">게시글 작성</div>
-        <form action="/board/writePro" method="post">
+        <form action="/board/writePro" method="post" enctype="multipart/form-data">
             <input name="title" class="mt30" type="text">
             <textarea name="content" class="mt30"></textarea>
+            <input type="file" name="file">
             <button type="submit" class="mt10 btn">작성</button>
         </form>
     </div>

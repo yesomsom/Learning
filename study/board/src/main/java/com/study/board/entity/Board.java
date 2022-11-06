@@ -15,4 +15,6 @@ public class Board {
     private Integer boardid;
     private String title;
     private String content;
+    private String filename;
+    private String filepath;
 }

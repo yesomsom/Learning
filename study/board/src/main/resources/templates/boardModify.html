@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 수정</title>
+</head>
+<style>
+    .layout{
+        width: 500px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .title{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    .layout input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .layout textarea {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .mt10 {
+        margin-top: 10px;
+    }
+    .mt30 {
+        margin-top: 30px;
+    }
+    .btn {
+
+    }
+</style>
+<body>
+    <div class="layout">
+        <div class="title">게시글 작성</div>
+        <form th:action="@{/board/update/{boardid}(boardid=${board.boardid})}" method="post">
+            <input name="title" class="mt30" type="text" th:value="${board.title}">
+            <textarea name="content" class="mt30" th:text="${board.content}"></textarea>
+            <button type="submit" class="mt10 btn">수정</button>
+        </form>
+    </div>
+</body>
+</html>

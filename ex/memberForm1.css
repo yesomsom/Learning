@@ -1,0 +1,103 @@
+body{
+	width: 1050px;
+	margin: 0 auto;
+}
+
+/* 회원가입폼 member Form */
+form {
+	width: 800px;
+	margin: 0 auto;
+}
+
+/* 타이틀 title */
+h1 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 45px;
+}
+
+/* content 내용 */
+/* flex 설정 */
+.mem_id, .mem_pwd, .mem_pwd_check, .mem_name, .mem_gender, .mem_phone, .mem_message_confirm, .mem_birth, .mem_email {
+	display: flex;
+	margin-bottom: 45px;
+}
+.phone_num, .email_all {
+	display: flex;	
+}
+.mem_id div, .mem_pwd div, .mem_pwd_check div, .mem_name div, .mem_gender div,.mem_phone div, .mem_message_confirm div, .mem_birth div, .mem_email div {
+	flex: 1;
+}
+
+/* 공통 묶음 */
+.padding_left {
+	padding-left: 30px;
+}
+.font_small_red {
+	font-size: 12px;
+	color: red;
+}
+.input_all{
+	width: 340px;
+	height: 30px;
+	line-height: 30px;
+    border: 1px solid #dbdbdb;
+}
+
+/* 성별 gender */
+.select_box_gender {
+	width: 346px;
+	height: 35px;
+	line-height: 30px;
+    border: 1px solid #dbdbdb;
+}
+
+/* 휴대전화 phone */
+.phone_num_second_input, .phone_num_third_input {
+	width: 85px;
+}
+.div_margin {
+	margin: auto 16px;
+}
+.select_box_phone {
+	width: 85px;
+	height: 35px;
+	line-height: 30px;
+    border: 1px solid #dbdbdb;
+}
+
+/* 이메일 email */
+.email_first_input{
+	width: 170px;
+}
+.select_box_email {
+	width: 124px;
+	height: 35px;
+	line-height: 30px;
+    border: 1px solid #dbdbdb;
+}
+
+/* 상단 버튼 button */
+.btn_ {
+	border: none;
+	background-color: #ddd;
+	width: 75px;
+	height: 35px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/* 하단 버튼 button */
+.button_all {
+	margin-top: 30px;
+	text-align: center;
+}
+.btn {
+	margin: 10px;
+	border: none;
+	background-color: #ddd;
+	width: 80px;
+	height: 40px;
+	border-radius: 10px;
+	cursor: pointer;
+}

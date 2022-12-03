@@ -1,4 +1,6 @@
 import './App.css';
+import Hello from './component/Hello';
+import Welcome from './component/Welcome';
 
 function App() {
   const name = "Jake";
@@ -14,7 +16,11 @@ function App() {
         Welcome to voca education page
       </h1>
       <p>Hello, {name}</p>
-    </div>
+      <a href={naver.url}>{naver.name}</a>
+      <Hello />
+      <Hello />
+      <Welcome />
+    </div> 
   );
 }
 

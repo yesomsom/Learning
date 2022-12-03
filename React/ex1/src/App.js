@@ -1,6 +1,7 @@
 import './App.css';
 import Hello from './component/Hello';
 import Welcome from './component/Welcome';
+import styles from './App.module.css';
 
 function App() {
   const name = "Jake";
@@ -18,8 +19,8 @@ function App() {
       <p>Hello, {name}</p>
       <a href={naver.url}>{naver.name}</a>
       <Hello />
-      <Hello />
       <Welcome />
+      <div className={styles.box}>box^^</div>
     </div> 
   );
 }

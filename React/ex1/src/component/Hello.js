@@ -9,13 +9,21 @@
 // export default Hello;
 
 import World from "./World";
-
+import styles from "./Hello.module.css"
 export default function Hello() {
   return (
     <div>
-      <p>Hello</p>
+      <p style={{
+        color : "#ccc",
+        borderRight : "2px solid #fff",
+        marginBottom: "50px",
+      }}>Hello</p>
       <World />
-      <World />
+      <div className={styles.box}>
+       okay
+      </div> 
+      <button>Show name</button>
+      <button>Show age</button>
     </div>
   );
 }

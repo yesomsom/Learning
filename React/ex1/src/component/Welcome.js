@@ -1,3 +1,5 @@
+import UserName from "./UserName";
+
 export default function Welcome() {
   let age = 26;
   let beverage = (age >= 21) ? "Beer" : "Juice";
@@ -12,8 +14,9 @@ export default function Welcome() {
     <div>
       <p>Welcome</p>
       <p id ="name">{name}</p>
+      <UserName name={name} />
       <p>{age} & {beverage}</p>
-      <button onClick={changeName}>Change</button>
+      <button onClick={changeName}>Change</button> 
     </div>  
   ) 
 

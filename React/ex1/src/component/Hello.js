@@ -28,7 +28,7 @@ export default function Hello() {
         borderRight : "2px solid #fff",
         marginBottom: "50px",
       }}>Hello</p>
-      <World />
+      <World num={0} />
       <div className={styles.box}>
        okay
       </div> 

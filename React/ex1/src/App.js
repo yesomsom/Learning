@@ -18,7 +18,7 @@ function App() {
       </h1>
       <p>Hello, {name}</p>
       <a href={naver.url}>{naver.name}</a>
-      <Hello />
+      <Hello/>
       <Welcome />
       <div className={styles.box}>box^^</div>
     </div> 

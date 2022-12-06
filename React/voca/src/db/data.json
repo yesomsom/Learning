@@ -1,0 +1,64 @@
+{
+  "days" : [
+    {
+      "id":1, 
+      "day":1
+    },
+    {
+      "id":2, 
+      "day":2
+    },
+    {
+      "id":3, 
+      "day":3
+    },
+    {
+      "id":4, 
+      "day":4
+    }
+  ],
+  "words" : [
+    {
+      "id":1,
+      "day":1,
+      "eng":"corporeal",
+      "kor":"형체를 가진, 물질적인, 신체의",
+      "isDone":false
+    },
+    {
+      "id":3,
+      "day":2,
+      "eng":"endure",
+      "kor":"견디다, 참다, 인내하다",
+      "isDone":false
+    },
+    {
+      "id":3,
+      "day":3,
+      "eng":"preen",
+      "kor":"(잔뜩) 몸치장을 하다[멋을 부리다]",
+      "isDone":false      
+    },
+    {
+      "id":2,
+      "day":4,
+      "eng":"captivate",
+      "kor":"…의 마음을 사로잡다[매혹하다]",
+      "isDone":false      
+    },
+    {
+      "id":2,
+      "day":1,
+      "eng":"established",
+      "kor":"인정받는, 확실히 자리를 잡은",
+      "isDone":false      
+    },
+    {
+      "id":1,
+      "day":1,
+      "eng":"ethos",
+      "kor":"(특정 집단·사회의) 기풍[정신]",
+      "isDone":false      
+    }
+  ]
+}

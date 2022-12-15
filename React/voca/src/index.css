@@ -85,3 +85,16 @@ table {
 td {
   padding: 20px;
 }
+
+
+/* Day.js */
+
+.day_title_color{
+  color:  white;
+  background-color: rgb(134 165 134);
+  width: 680px;
+  padding: 10px;
+  position: relative;
+  left: 50px;
+  margin-top: 60px;
+}

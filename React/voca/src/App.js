@@ -12,7 +12,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/' element={ <DayList /> } />
-          <Route path='/day/:day'element={ <Day /> } /> // :day = 1
+          <Route path='/day/:dayEle'element={ <Day /> } /> // :dayEle = 1
           <Route path='*' element={ <EmptyPage /> } />
         </Routes> 
       </div>    

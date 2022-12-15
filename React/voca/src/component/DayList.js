@@ -6,7 +6,7 @@ export default function DayList() {
   return (  
     <ul className="list_day">
       {dummy.days.map(days => (
-        <li key={days.id}>
+        <li className="list_day_li" key={days.id}>
           <Link to={`/day/${days.day}`} id="fontColorWhite">Day {days.day}</Link>
         </li>
       ))}

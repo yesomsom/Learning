@@ -13,8 +13,15 @@ export default function Day() {
       <tbody>
         {wordlist.map(word => (
           <tr key={word.id}>
+            <td>
+              <input type="checkbox"></input>
+            </td>
             <td>{word.eng}</td>
             <td>{word.kor}</td>
+            <td>
+              <button className="btn_check">뜻 확인</button>
+              <button className="btn_del">삭제</button>
+            </td>
           </tr>
         ))}
       </tbody>

@@ -141,6 +141,11 @@ li.list_day_li:hover{
 
 /* Word.js */
 
+.turn_off{
+  background-color: #efefef;
+  color:#aaa;
+}
+
 .word_kor{
   width: 300px;
 }

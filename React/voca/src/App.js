@@ -21,3 +21,18 @@ function App() {
 }
 
 export default App;
+
+
+/* REST API */
+
+// npx json-server ./src/db/data.json --port 3002 
+// http://localhost:3002/days
+// http://localhost:3002/words
+//  Home http://localhost:3002
+
+// CREAT : POST
+// READ : GET
+// UPDATE : PUT
+// DELETE : DELETE
+
+// http://localhost:3002/words?day=1

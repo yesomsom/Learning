@@ -109,6 +109,7 @@ li.list_day_li:hover{
   background-color:rgb(117, 154, 117);
 }
 
+
 /* Day.js */
 
 .day_title_color{
@@ -135,4 +136,11 @@ li.list_day_li:hover{
   color: white;
   padding: 5px 10px;
   border: 1px solid #3f3f3fba;
+}
+
+
+/* Word.js */
+
+.word_kor{
+  width: 300px;
 }

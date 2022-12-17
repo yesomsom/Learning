@@ -1,5 +1,6 @@
 import dummy from "../db/data.json";
 import { useParams } from "react-router-dom"; //url 변수 가져옴
+import Word from "../component/Word";
 
 export default function Day() {
 
@@ -11,18 +12,8 @@ export default function Day() {
   <h2 className="day_title_color">Day {day}</h2>
     <table>
       <tbody>
-        {wordlist.map(word => (
-          <tr key={word.id}>
-            <td>
-              <input type="checkbox"></input>
-            </td>
-            <td>{word.eng}</td>
-            <td>{word.kor}</td>
-            <td>
-              <button className="btn_check">뜻 확인</button>
-              <button className="btn_del">삭제</button>
-            </td>
-          </tr>
+        {wordlist.map(wordsList => (
+          <Word word={wordsList} key={wordsList.id}/>
         ))}
       </tbody>
     </table>

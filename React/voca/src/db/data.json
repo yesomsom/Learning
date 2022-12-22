@@ -47,6 +47,18 @@
     {
       "id": 12,
       "day": 12
+    },
+    {
+      "day": 13,
+      "id": 13
+    },
+    {
+      "day": 14,
+      "id": 14
+    },
+    {
+      "day": 15,
+      "id": 15
     }
   ],
   "words": [
@@ -91,6 +103,27 @@
       "eng": "ethos",
       "kor": "(특정 집단·사회의) 기풍[정신]",
       "isDone": false
+    },
+    {
+      "day": "2",
+      "eng": "car",
+      "kor": "차",
+      "isDone": false,
+      "id": 7
+    },
+    {
+      "day": "1",
+      "eng": "house",
+      "kor": "집",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": "1",
+      "eng": "food",
+      "kor": "음식",
+      "isDone": false,
+      "id": 9
     }
   ]
 }

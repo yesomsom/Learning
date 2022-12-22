@@ -26,6 +26,7 @@ export default function Day() {
 
   return <>
   <h2 className="day_title_color">Day {day}</h2>
+  {wordlist.length === 0 && <span>Loading...</span>}
     <table>
       <tbody>
         {wordlist.map(wordsList => (

@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 
 const CounterContainer = ({ number, increase, decrease }) => {
   return (
-    <Counter number={number} onIncrease={increase} onDecrease={decrease} />
+    <Counter num={number} onIncrease={increase} onDecrease={decrease} />
   );
 };
 

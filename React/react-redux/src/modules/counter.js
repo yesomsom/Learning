@@ -1,7 +1,6 @@
 // redux
 
 // 액션 타입 정의
-
 const INCREASE = 'counter/INCREASE';
 const DECREASE = 'counter/DECREASE';
 
@@ -14,7 +13,6 @@ export const decrease = () => ({
 });
 
 // 초기 상태
-
 const initialState = {
   number: 0
 };

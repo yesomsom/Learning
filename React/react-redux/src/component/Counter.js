@@ -1,9 +1,9 @@
 // App.js 에 삽입
 
-const Counter = ({ number, onIncrease, onDecrease }) => {
+const Counter = ({ num, onIncrease, onDecrease }) => {
   return (
     <div>
-      <h1>{number}</h1>
+      <h1>{num}</h1>
       <div>
         <button onClick={onIncrease}>+1</button>
         <button onClick={onDecrease}>-1</button>

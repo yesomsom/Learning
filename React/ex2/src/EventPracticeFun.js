@@ -18,7 +18,7 @@ const EventPracticeFun = () => {
 
   return (
     <div>
-      <h1>이벤트 연습</h1>
+      <h1>이벤트 Function</h1>
       <input 
         type="text"
         name="username"

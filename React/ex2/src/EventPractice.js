@@ -3,7 +3,8 @@ import { Component } from "react";
 class EventPractice extends Component {
 
   state = {
-    message: ''
+    message: '',
+    username: ''
   }
 
   // constructor(props) {
@@ -14,16 +15,26 @@ class EventPractice extends Component {
 
   handleChange = (e) => {
     this.setState({
-      message: e.target.value
+      [e.target.name]: e.target.value
     });
+    console.log(e.target.name);
   }
 
   handleClick = () => {
-    alert(this.state.message);
+    alert(this.state.username + ': '+ this.state.message);
     this.setState({
-      message: ''
+      message: '',
+      username: ''
     });
   }
+
+  handleKeyPress = (e) => {
+    if(e.key === 'Enter') {
+      this.handleClick();
+    }
+  }
+
+
 
   render() {
       return (
@@ -31,10 +42,18 @@ class EventPractice extends Component {
             <h1>이벤트</h1>
             <input
               type="text"
+              name="username"
+              placeholder="사용자명"
+              value={this.state.username}
+              onChange={this.handleChange}
+            />
+            <input
+              type="text"
               name="message"
               placeholder="입력"
               value = {this.state.message}
               onChange={this.handleChange}
+              onKeyPress={this.handleKeyPress}
             />
             <button onClick={this.handleClick}>확인</button>
           </div>

@@ -18,6 +18,9 @@ const Home = () => {
         <li>
           <Link to="/profile/void">존재하지 않는 프로필입니다.</Link>
         </li>
+        <li>
+          <Link to="/about1">소개1</Link>
+        </li>
       </ul>
     </div>
   );

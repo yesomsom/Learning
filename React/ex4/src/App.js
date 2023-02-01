@@ -1,6 +1,8 @@
 import './App.css';
 //import notify from './notify';
 import { lazy, Suspense, useState } from 'react';
+import Counter from './Counter';
+import Info from './Info';
 
 const SplitMe = lazy(() => import('./SplitMe'));
 
@@ -28,6 +30,8 @@ function App() {
         { visible && <SplitMe /> }
       </Suspense>
       <p onClick={onClick1} onMouseOver={onMouseOver}>Preload</p>
+      <Counter />
+      <Info />
     </div>
   );
 }

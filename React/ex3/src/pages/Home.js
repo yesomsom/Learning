@@ -13,7 +13,7 @@ const Home = () => {
           <Link to="/profile/aPerson">a 소개</Link>
         </li>
         <li>
-          <Link to="/profile/aPerson">b 소개</Link>
+          <Link to="/profile/bPerson">b 소개</Link>
         </li>
         <li>
           <Link to="/profile/void">존재하지 않는 프로필입니다.</Link>

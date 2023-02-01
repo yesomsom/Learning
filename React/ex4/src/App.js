@@ -16,6 +16,9 @@ function App() {
     setVisible(true);
   };
 
+  const onMouseOver = () => {
+    SplitMe.preload();
+  };
 
   return (
     <div className="App">
@@ -24,6 +27,7 @@ function App() {
       <Suspense fallback={<div>loading...</div>}>
         { visible && <SplitMe /> }
       </Suspense>
+      <p onClick={onClick1} onMouseOver={onMouseOver}>Preload</p>
     </div>
   );
 }

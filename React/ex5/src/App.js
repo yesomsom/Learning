@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Average from './Average';
 import Counter from './Counter';
 import Info from './Info';
 import Info1 from './Info1';
@@ -19,6 +20,8 @@ function App() {
       <Counter />
       <hr />
       <Info1 />
+      <hr />
+      <Average />
     </div>
   );
 }

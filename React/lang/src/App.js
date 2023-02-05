@@ -8,9 +8,11 @@ import locale from './locale';
 import MessageOutput1 from './component/MessageOuput1';
 
 function App() {
-  const lang = 'en';
+  const lang = 'ko';
+  console.log(locale[lang]);
+
   return (
-    <IntlProvider locale={lang} message={locale[lang]}>
+    <IntlProvider locale={lang} messages={locale[lang]}>
       <ConfigProvider locale={lang === 'ko' ? locale_kr : locale_en}>
         <MessageOutput1 />
       </ConfigProvider>

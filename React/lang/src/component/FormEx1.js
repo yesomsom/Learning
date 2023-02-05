@@ -2,7 +2,8 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import { useIntl, FormattedMessage } from 'react-intl';
 
 const FormEx1 = () => {
-  const { formatMessage } = useIntl();
+  // const { formatMessage } = useIntl();
+  const intl = useIntl();
   const onFinish = (values) => {
     console.log('Success:', values);
   };
@@ -22,6 +23,8 @@ const FormEx1 = () => {
     onFinishFailed={onFinishFailed}
     autoComplete="off"
   >
+
+    {/* FormattedMessage 1번째 사용법 */}
     <Form.Item
       label="Username"
       name="username"
@@ -32,11 +35,14 @@ const FormEx1 = () => {
       <Input />
     </Form.Item>
 
+    {/* FormattedMessage 2번째 사용법 */}
     <Form.Item
       label="Password"
       name="password"
       rules={[{ required: true,
-        message: <FormattedMessage id="PLEASE_INPUT_PW" />, 
+        message: intl.formatMessage({
+          id: "PLEASE_INPUT_PW"
+        }), 
       }]}
     >
       <Input.Password />

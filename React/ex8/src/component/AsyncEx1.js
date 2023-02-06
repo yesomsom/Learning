@@ -40,6 +40,9 @@ increase10(0, result => {
   })
 })
 
+
+// promise 사용
+
 function increase1(num) {
   const promise = new Promise((resolve, reject) => {
     // resolve는 성공, reject는 실패
@@ -73,6 +76,39 @@ increase1(0)
   .catch(e => {
     console.log(e);
   });
+
+
+// async/await 사용
+function decrease(num) {
+  const promiseDe = new Promise((resolve, reject) => {
+    setTimeout(()=> {
+      const result = num - 3;
+      if(result < 0) {
+        const e = new Error('NumberBelowZero');
+        return reject(e);
+      }
+      resolve(result);
+    }, 1000)
+  });
+  return promiseDe;
+}
+
+async function runTasks() {
+  try {
+    let result = await decrease(10);
+    console.log(result); // 7 
+    result = await decrease(result);
+    console.log(result); // 4
+    result = await decrease(result);
+    console.log(result); // 1
+    result = await decrease(result);
+    console.log(result); // error
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+runTasks();
 
 const AsyncEx1 = () => {
   return (

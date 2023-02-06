@@ -1,5 +1,5 @@
 import './App.css';
-import AsyncEx1 from './component/asyncEx1';
+import AsyncEx1 from './component/AsyncEx1';
 
 function App() {
   return (

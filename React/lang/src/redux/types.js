@@ -1,5 +1,5 @@
 const types = {
-  locale: 'LOCALE',
+  langChange: 'LANGCHANGE',
 }
 
 export default types;

@@ -1,8 +1,8 @@
-import types from "../types";
+import types from '../types';
 
-export function langChange(toggle) {
+export function langChange(change) {
   return {
-    type: types.locale,
-    payload: toggle
-  }
+    type: types.langChange,
+    payload: change
+  };
 }

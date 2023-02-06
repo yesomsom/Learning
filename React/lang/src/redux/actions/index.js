@@ -1,8 +1,8 @@
 import * as langChange from './langChange';
 
-const ActionCreators = Object.assign(
+const Action = Object.assign(
   {},
   langChange,
 );
 
-export default ActionCreators;
+export default Action;

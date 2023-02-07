@@ -29,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+// npx json-server ./src/db/data.json --port 3004

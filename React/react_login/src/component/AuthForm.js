@@ -2,12 +2,17 @@ import { Col, Row, Form, Button, Input } from "antd";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const onFinish = async (values) => {
-  const { normalMember } = await axios.post("http://localhost:3003/normalMember", {
-      userId: values.userId,
-      password: values.password
-    }
-  );
+const onFinish = (values) => {
+  axios.post('http://localhost:3007/normalMember', {
+    userId: values.userId,
+    password: values.password
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
   console.log(values);
   console.log(values.userId);
   console.log(values.password);

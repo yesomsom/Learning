@@ -16,4 +16,4 @@ function App() {
 
 export default App;
 
-// npx json-server ./src/data/data.json --port 3003
+// npx json-server ./src/db/data.json --port 3007

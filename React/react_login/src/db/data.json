@@ -1,8 +1,24 @@
 {
   "normalMember": [
     {
+      "id": 1,
       "userId": "a123",
       "password": "a111"
+    },
+    {
+      "userId": "cc",
+      "password": "cc",
+      "id": 2
+    },
+    {
+      "userId": "ㅎㅎ",
+      "password": "gg",
+      "id": 3
+    },
+    {
+      "userId": "id",
+      "password": "pw",
+      "id": 4
     }
   ]
 }

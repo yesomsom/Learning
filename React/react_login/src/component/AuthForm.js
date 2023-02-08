@@ -1,24 +1,28 @@
 import { Col, Row, Form, Button, Input } from "antd";
 import axios from "axios";
-import { Link } from "react-router-dom";
-
-const onFinish = (values) => {
-  axios.post('http://localhost:3007/normalMember', {
-    userId: values.userId,
-    password: values.password
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-  console.log(values);
-  console.log(values.userId);
-  console.log(values.password);
-};
+import { Link,useNavigate } from "react-router-dom";
 
 const AuthForm = () => {
+  const history = useNavigate();
+
+  const onFinish = (values) => {
+    axios.post('http://localhost:3007/normalMember', {
+      userId: values.userId,
+      password: values.password
+    })
+    .then(function (response) {
+      console.log(response);
+      history('/login');
+      window.alert('회원가입이 완료되었습니다.');
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+    console.log(values);
+    console.log(values.userId);
+    console.log(values.password);
+  };
+
   return (
     <div>
       <Row>

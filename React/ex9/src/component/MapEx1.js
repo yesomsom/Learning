@@ -24,7 +24,12 @@ const MapEx1 = () => {
     setInputText('');
   };
 
-  const animalList = animal.map(name => <li key={name.id}>{name.text}</li>);
+  const onRemove = id => {
+    const nextNames = animal.filter(name => name.id !== id);
+    setAnimal(nextNames);
+  }
+
+  const animalList = animal.map(name => <li key={name.id} onDoubleClick={() => onRemove(name.id)}>{name.text}</li>);
   return (
     <div>
       <h2>동물</h2>

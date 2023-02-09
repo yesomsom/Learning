@@ -24,6 +24,7 @@ const MapEx1 = () => {
     setInputText('');
   };
 
+  // 더블 클릭하면 name.id가 id와 같지 않은 것들만 출력
   const onRemove = id => {
     const nextNames = animal.filter(name => name.id !== id);
     setAnimal(nextNames);

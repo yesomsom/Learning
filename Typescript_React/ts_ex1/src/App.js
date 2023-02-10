@@ -1,8 +1,10 @@
 import './App.css';
+import Ex1 from './component/Ex1.tsx';
 
 function App() {
   return (
     <div className="App">
+      <Ex1 />
     </div>
   );
 }

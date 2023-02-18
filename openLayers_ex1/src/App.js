@@ -5,6 +5,7 @@ import Map from './Map';
 function App() {
   const [mapObject, setMapObject] = useState({});
   const [clickProps, setClickProps] = useState(false);
+  const [clickOverLayProps, setClickOverLayProps] = useState(false);
 
   return (
     <div className="App">
@@ -13,8 +14,8 @@ function App() {
           mapObject = {mapObject}
           setMapObject = {setMapObject}
           clickProps = {clickProps}
+          clickOverLayProps = {clickOverLayProps}
         />
-
       </div>
 
       <button 
@@ -22,9 +23,15 @@ function App() {
           setClickProps(true);
           //console.log(clickProps);
         }}
-        style={{zIndex: 10000}}
       >
         현재 위치 표시
+      </button>
+      <button
+        onClick={() =>{
+          setClickOverLayProps(true);
+        }}
+      >
+        오버레이로 표시
       </button>
     </div>
   );

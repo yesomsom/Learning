@@ -10,9 +10,10 @@ import { Style,Stroke,Fill, Text } from 'ol/style.js';
 import VectorLayer  from 'ol/layer/Vector.js';
 import VectorSource  from 'ol/source/Vector.js';
 import point from 'ol/geom/Point';
+import Overlay from 'ol/Overlay.js';
 
 function Map(props){
-    const { setMapObject, clickProps } = props;
+    const { setMapObject, clickProps, clickOverLayProps } = props;
 
     //const [clickProps, setClickProps] = useState(false);
     //const [mapObject, setMapObject] = useState({})
@@ -26,7 +27,7 @@ function Map(props){
             target: 'map1', 
             view: new View({
                 center: fromLonLat([126.9714, 37.5539], getProjection('EPSG:3857')),
-                zoom: (clickProps !== true) ? 14 : 16
+                zoom: 14
             })
         })
         console.log(clickProps);
@@ -55,16 +56,56 @@ function Map(props){
               })
           })]
         });
+        let mapView = map.getView();
+        {clickProps && mapView.setZoom(16)}
         {clickProps && map.addLayer(vectorLayer)}
         // map.addLayer(vectorLayer); //만들어진 벡터를 추가
 
+        map.on('singleclick', function(evt) {
+          let container = document.createElement('div');
+          container.classList.add('ol-popup-custom');
+          let content = document.createElement('div');
+          content.classList.add('popup-content');
+          container.appendChild(content);
+          document.body.appendChild(container);
+          var coordinate = evt.coordinate; // 클릭한 지도 좌표
+          content.innerHTML = '<span>' + '클릭한 위치입니다.' + '</span>';
+          var overlay = new Overlay({
+              element: container,
+              //autoPan: true,
+              //autoPanAnimation: {
+              //  duration: 250
+              //}
+            });
+          map.addOverlay(overlay);
+          overlay.setPosition(coordinate);
+        })
+
+        // let wrapper = document.createElement('div');
+        // let wrap = document.createElement('div');
+        // wrapper.appendChild(wrap);
+        // document.body.appendChild(wrapper);
+        // wrap.innerHTML = "<span style={{width:'10px', height: '10px', backgroundColor: 'red', zIndex: 9999}}></span>";
+
+        // const overlayMarker = new Overlay({
+        //   position: [126.9714, 37.5539],
+        //  // positioning: 'center-center',
+        //   element: document.getElementById('overLayDiv'),
+        //   //stopEvent: false,
+        // })
+        // let mapOverlayView = map.getView();
+
+        // {clickOverLayProps && mapOverlayView.setZoom(16)}
+        // {clickOverLayProps && map.addOverlay(overlayMarker)}
+        // console.log('clickOverLayProps',clickOverLayProps)
+
         setMapObject({ map })
         return () => map.setTarget(undefined); // id 지정하지 않은 곳
-    }, [clickProps]) // clickProps 변경되면 리렌더링
+    }, [clickProps, clickOverLayProps]) // clickProps 변경되면 리렌더링
 
     
     return (
-      <>
+      <div>
         {/*<div id="map" value={mapObject} style={{height:'50rem'}}></div> 
         <div>
           <button 
@@ -76,7 +117,9 @@ function Map(props){
           현재 위치 표시
         </button>
         </div>*/}
-      </>
+
+        {/* <div id="overLayDiv" style={{width:'10px', height: '10px', backgroundColor: 'red'}}></div> */}
+      </div>
 
 
     )

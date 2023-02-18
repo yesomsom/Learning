@@ -55,7 +55,7 @@ function Map(props){
               })
           })]
         });
-        {clickProps && map.addLayer(vectorLayer) && map.getView().fit(pnt.getGeometry().getExtent());}
+        {clickProps && map.addLayer(vectorLayer)}
         // map.addLayer(vectorLayer); //만들어진 벡터를 추가
 
         setMapObject({ map })

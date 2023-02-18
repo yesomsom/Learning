@@ -30,14 +30,14 @@ function Map(props){
             })
         })
         console.log(clickProps);
-        var pnt = new point([126.9714, 37.5539]).transform('EPSG:4326', 'EPSG:3857');  //위경도를 오픈레이어스에서 사용중인 값으로 변환
-        var changePoints = pnt.getCoordinates();
-        var vectorSource = new Vector({projection: 'EPSG:4326'}); //새로운 벡터 생성
-        var circle = new Circle(changePoints, 120);  //좌표, 반경 넓이
-        var CircleFeature = new Feature(circle); //구조체로 형성
+        let pnt = new point([126.9714, 37.5539]).transform('EPSG:4326', 'EPSG:3857');  //위경도를 오픈레이어스에서 사용중인 값으로 변환
+        let changePoints = pnt.getCoordinates();
+        let vectorSource = new Vector({projection: 'EPSG:4326'}); //새로운 벡터 생성
+        let circle = new Circle(changePoints, 120);  //좌표, 반경 넓이
+        let CircleFeature = new Feature(circle); //구조체로 형성
         vectorSource.addFeatures([CircleFeature]); // 벡터소스에 추가
 
-        var vectorLayer =new VectorLayer({  //추가할 벡터레이어
+        let vectorLayer =new VectorLayer({  //추가할 벡터레이어
           source: vectorSource,
           style: [
           new Style({

@@ -19,3 +19,9 @@ document.writeln("ex1: ", ex1);
 document.writeln("ex2: ", ex2);
 document.writeln("ex3: ", ex3);
 document.writeln("ex4: ", ex4);
+
+const ex5 = Object.keys(first).find((_)=>_); // name
+document.writeln("ex5: ", ex5);
+
+const ex6 = Object.values(first).find((_)=>_);
+document.writeln("ex6: ", ex6); // aa

@@ -4,9 +4,11 @@ class Counter extends Component {
 
   constructor(props) {
     super(props);
+    const { prop } = this.props;
     this.state = {
       number: 0,
       isState: 'false',
+      propState: prop,
     }
   }
   // state = {
@@ -15,12 +17,13 @@ class Counter extends Component {
   // };
 
   render() {
-    const { number, isState } = this.state;
+    const { number, isState, propState } = this.state;
     const { prop } = this.props;
 
     console.log(isState);
     return (
       <>
+        {/* increase number */}
         <h1>{number}</h1>
         <button
           onClick={() => {
@@ -29,15 +32,30 @@ class Counter extends Component {
         >
           +1
         </button>
+
+        {/* toggle */}
         <h1>{isState}</h1>
         <button
           onClick={() => {
-            this.setState({isState: 'true'});
+            if(isState == 'true') {
+              this.setState({isState: 'false'});
+            } else {
+              this.setState({isState: 'true'});
+            }
           }}
         >
           change
         </button>
-        <h1>{prop}</h1>
+
+        {/* prop */}
+        <h1>{prop} & {propState}</h1>
+        <button
+          onClick={() => {
+            this.setState({propState: prop});
+          }}
+        >
+          prop update
+        </button>
       </>
     );
   }

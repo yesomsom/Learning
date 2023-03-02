@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import { default as ReactSelect , components } from "react-select";
-
+import Ex1 from "../src/component/ex1";
 
 export const colourOptions = [
   { value: "ocean1", label: "Ocean" },
@@ -53,10 +53,11 @@ function App() {
             Option
           }}
           onChange={handleChange}
-          allowSelectAll={true}
+          allowSelectAll={false}
           value={optionSelected}
         />
       </span>
+      <Ex1 />
     </div>
   );
 }

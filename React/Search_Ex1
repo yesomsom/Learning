@@ -12,12 +12,13 @@ const SearchEx1 = () => {
     <button
       type="button"
       key={ind}
+      className={'all-selective-control-logs-pagination-num' + (page - 1 === ind ? ' selected' : '')}
       onClick={() => {
         setPage(ind + 1);
         const name4 = nameRef.current ? nameRef.current.value : 'name4';
         const checkbox1 = checkRef1.current ? checkRef1.current.checked ? checkRef1.current.id : 'noCheck' : 'null';
         const checkbox2 = checkRef2.current ? checkRef2.current.checked ? checkRef2.current.id : 'noCheck' : 'null'; 
-        console.log('내부page:', ind+1, 'name:', name4, 'checkbox:', checkbox1, 'checkbox:', checkbox2);
+        console.log('내부page:', ind+1, 'name:', name1, 'checkbox:', checkbox1, 'checkbox:', checkbox2);
       }}
     >
       {ind + 1}
@@ -37,13 +38,6 @@ const SearchEx1 = () => {
   // const name3 = (formRef.current?.elements as any).name.value;
   // console.log('value',(formRef.current?.elements as any).name.value);
 
-  const onclick = (name : string) => {
-    console.log('prop', name);
-  }
-  const onClick = () => {
-
-  }
-
   useEffect(()=>{
     console.log("처음effect");
   },[]);
@@ -60,6 +54,7 @@ const SearchEx1 = () => {
 
           const checkbox1 = checkRef1.current ? checkRef1.current.checked ? checkRef1.current.id : 'noCheck' : 'null';
           const checkbox2 = checkRef2.current ? checkRef2.current.checked ? checkRef2.current.id : 'noCheck' : 'null';
+          
           console.log('button name',name); // 변경사항 바로 정상 출력
           console.log('체크유무',checkbox1);
 
@@ -76,7 +71,7 @@ const SearchEx1 = () => {
           type="text"
           ref={nameRef}
         />
-        <input type="checkbox" ref={checkRef1} id="check1" value="checkValue1" />
+        <input type="checkbox" ref={checkRef1} id="check1" name="checkName1" />
         <input type="checkbox" ref={checkRef2} id="check2" />
 
         <button type="submit">submit 버튼</button>

@@ -12,7 +12,6 @@ const SearchEx1 = () => {
     <button
       type="button"
       key={ind}
-      className={'all-selective-control-logs-pagination-num' + (page - 1 === ind ? ' selected' : '')}
       onClick={() => {
         setPage(ind + 1);
         const name4 = nameRef.current ? nameRef.current.value : 'name4';

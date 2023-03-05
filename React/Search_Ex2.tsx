@@ -8,6 +8,7 @@ const SearchEx2 = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const all = formRef.current ? (formRef.current?.elements as any).all.value : 'no';
 
+  console.log('allInput',allInput);
 
   const makePageSet = (ind:number) => (
     <button
@@ -16,7 +17,7 @@ const SearchEx2 = () => {
       onClick={() => {
         const all = formRef.current ? (formRef.current?.elements as any).all.value : 'no';
         setPage(ind + 1);
-        console.log('page', page, ind+1, 'all', all, allState, allInputs.allInput, allInputs.oneInput);
+        console.log('page', page, ind+1, 'all', all, allState, allInputs.allInput, allInputs.oneInput, allInput, oneInput);
       }}
     >
       {ind + 1}
@@ -65,6 +66,7 @@ const SearchEx2 = () => {
               type="button"
               onClick={() => {
                 setPage(page - 1);
+                console.log('왼쪽page', page-1);
               }}
             >*-</button>
           )}
@@ -77,6 +79,7 @@ const SearchEx2 = () => {
               type="button"
               onClick={() => {
                 setPage(page + 1);
+                console.log('오른쪽page', page+1);
               }}
             >-*</button>
           )}

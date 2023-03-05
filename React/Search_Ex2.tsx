@@ -18,6 +18,7 @@ const SearchEx2 = () => {
         const all = formRef.current ? (formRef.current?.elements as any).all.value : 'no';
         setPage(ind + 1);
         console.log('page', page, ind+1, 'all', all, allState, allInputs.allInput, allInputs.oneInput, allInput, oneInput);
+        console.log('one_check', oneInput);
       }}
     >
       {ind + 1}

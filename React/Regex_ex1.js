@@ -1,6 +1,6 @@
 const ex1 = () => {
   const onChangeFun = (e) => {
-    const regex = /^(?=.*\d{2})[0-9*/?!@#$%^&()<>\\\-_+=~/,/.`|]{4}$/;
+    const regex = /^(?=.*\d{1})(?=.*\d{1})[0-9*/?!@#$%^&()<>\\\-_+=~/,/.`|]{4}$/;
     const reg = /[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/gi;
     const inputValue = e.target.value;
     const replaceValue = inputValue.replace(reg, '*');

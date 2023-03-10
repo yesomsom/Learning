@@ -3,6 +3,20 @@ import person from './person.png';
 
 const Draw = () => {
   const [isTarget, setIsTarget] = useState(false); 
+  const [pointList, setPointList] = useState([
+    {
+      point0: 10,
+      point1 : 10,
+      point2 : 50,
+      point3: 50
+    },
+    {
+      point0: 60,
+      point1 : 70,
+      point2 : 90,
+      point3: 100
+    },
+  ])
   console.log(isTarget);
   const onClickFun = () => {
     let canvas = document.getElementById('originalDrawCanvas');
@@ -21,17 +35,20 @@ const Draw = () => {
   }
   const drawCircle = () => {
     let canvas = document.getElementById('circleDrawCanvas');
-    let point0 = 10;
-    let point1 = 10;
-    let point2 = 50;
-    let point3 = 50;
-    let width = point2-point0;
-    let height = point3-point1;
-    let ctx = canvas.getContext('2d');
-    ctx.lineWidth = 3;
-    ctx.arc(point0+point2/2,point1+point3/2,width/2,0,Math.PI*2);
-    ctx.strokeStyle = isTarget ? 'blue' : 'yellow';
-    ctx.stroke();
+    pointList.map((item, ind) => {
+      let point0 = item.point0;
+      let point1 = item.point1;
+      let point2 = item.point2;
+      let point3 = item.point3;
+      let width = point2-point0;
+      let height = point3-point1;
+      let ctx = canvas.getContext('2d');
+      ctx.lineWidth = 3;
+      ctx.arc(point0+point2/2,point1+point3/2,width/2,0,Math.PI*2);
+      ctx.strokeStyle = isTarget ? 'blue' : 'yellow';
+      ctx.stroke();
+      ctx.beginPath();
+    })
   }
 
   return (

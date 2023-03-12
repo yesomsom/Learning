@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import person from './person.png';
+import person from './person.jpg';
 
 const Draw = () => {
   const [isTarget, setIsTarget] = useState(false); 
@@ -34,7 +34,11 @@ const Draw = () => {
     }
   }
   const drawCircle = () => {
-    let canvas = document.getElementById('circleDrawCanvas');
+    let canvas = document.getElementById('originalDrawCanvas');
+    let circleCanvas = document.getElementById('circleDrawCanvas');
+    circleCanvas.width = canvas.width;
+    circleCanvas.height = canvas.height;
+
     pointList.map((item, ind) => {
       let point0 = item.point0;
       let point1 = item.point1;
@@ -42,7 +46,7 @@ const Draw = () => {
       let point3 = item.point3;
       let width = point2-point0;
       let height = point3-point1;
-      let ctx = canvas.getContext('2d');
+      let ctx = circleCanvas.getContext('2d');
       ctx.lineWidth = 3;
       ctx.arc(point0+point2/2,point1+point3/2,width/2,0,Math.PI*2);
       ctx.strokeStyle = isTarget ? 'blue' : 'yellow';
@@ -56,6 +60,7 @@ const Draw = () => {
       <img 
         src={person}
         id="uploadImage"
+        style={{width:'100px', height:'100px'}}
       />
       {/* 복제해서 그리기 */}
       <canvas 
@@ -67,17 +72,33 @@ const Draw = () => {
         id='circleDrawCanvas'
         style={{position: 'absolute', top: '50%', left: '50%'}}
         onMouseMove={(e) => {
+          const circleCanvas = e.currentTarget;
+          const canvasCircle = circleCanvas.getBoundingClientRect();
+          const mouseX = e.clientX - canvasCircle.left;
+          const mouseY = e.clientY - canvasCircle.top;
+          let target = document.getElementById('uploadImage');;
+          let original = document.getElementById('originalDrawCanvas');
+          const w_resolution = target.clientWidth / original.width;
+          const h_resolution = target.clientHeight / original.height;
+
           let point0 = 10;
           let point1 = 10;
           let point2 = 50;
           let point3 = 50;
           const { offsetX, offsetY } = e.nativeEvent;
-          const circleCanvas = e.currentTarget;
-          if(offsetX>point0&&offsetX<point2&&offsetY>point1&&offsetY<point3) {
+          if (pointList.find((human) => offsetX >= human.point0 && offsetX <= human.point2 && offsetY >= human.point1 && offsetY <= human.point3)) {
             circleCanvas.style.cursor = 'pointer';
+            circleCanvas.style.backgroundColor = 'red';
           } else {
             circleCanvas.style.cursor = 'default';
+            circleCanvas.style.backgroundColor = 'green';
           }
+
+          // if(offsetX>point0&&offsetX<point2&&offsetY>point1&&offsetY<point3) {
+          //   circleCanvas.style.cursor = 'pointer';
+          // } else {
+          //   circleCanvas.style.cursor = 'default';
+          // }
         }}
         onMouseUp={(e)=> {
           setIsTarget(true);

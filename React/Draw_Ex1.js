@@ -48,7 +48,9 @@ const Draw = () => {
       let height = point3-point1;
       let ctx = circleCanvas.getContext('2d');
       ctx.lineWidth = 3;
-      ctx.arc(point0+point2/2,point1+point3/2,width/2,0,Math.PI*2);
+      ctx.arc((point0+point2)/2,(point1+point3)/2,width/2,0,Math.PI*2);
+      console.log(point0,point1,point2,point3);
+      console.log('point', (point0+point2)/2, (point1+point3)/2);
       ctx.strokeStyle = isTarget ? 'blue' : 'yellow';
       ctx.stroke();
       ctx.beginPath();
@@ -81,12 +83,13 @@ const Draw = () => {
           const w_resolution = target.clientWidth / original.width;
           const h_resolution = target.clientHeight / original.height;
 
-          let point0 = 10;
-          let point1 = 10;
-          let point2 = 50;
-          let point3 = 50;
+          // let point0 = 10;
+          // let point1 = 10;
+          // let point2 = 50;
+          // let point3 = 50;
           const { offsetX, offsetY } = e.nativeEvent;
           if (pointList.find((human) => offsetX >= human.point0 && offsetX <= human.point2 && offsetY >= human.point1 && offsetY <= human.point3)) {
+            // console.log(offsetX, offsetY);
             circleCanvas.style.cursor = 'pointer';
             circleCanvas.style.backgroundColor = 'red';
           } else {

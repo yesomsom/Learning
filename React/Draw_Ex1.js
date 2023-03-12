@@ -75,18 +75,7 @@ const Draw = () => {
         style={{position: 'absolute', top: '50%', left: '50%'}}
         onMouseMove={(e) => {
           const circleCanvas = e.currentTarget;
-          const canvasCircle = circleCanvas.getBoundingClientRect();
-          const mouseX = e.clientX - canvasCircle.left;
-          const mouseY = e.clientY - canvasCircle.top;
-          let target = document.getElementById('uploadImage');;
-          let original = document.getElementById('originalDrawCanvas');
-          const w_resolution = target.clientWidth / original.width;
-          const h_resolution = target.clientHeight / original.height;
 
-          // let point0 = 10;
-          // let point1 = 10;
-          // let point2 = 50;
-          // let point3 = 50;
           const { offsetX, offsetY } = e.nativeEvent;
           if (pointList.find((human) => offsetX >= human.point0 && offsetX <= human.point2 && offsetY >= human.point1 && offsetY <= human.point3)) {
             // console.log(offsetX, offsetY);
@@ -97,11 +86,6 @@ const Draw = () => {
             circleCanvas.style.backgroundColor = 'green';
           }
 
-          // if(offsetX>point0&&offsetX<point2&&offsetY>point1&&offsetY<point3) {
-          //   circleCanvas.style.cursor = 'pointer';
-          // } else {
-          //   circleCanvas.style.cursor = 'default';
-          // }
         }}
         onMouseUp={(e)=> {
           setIsTarget(true);
